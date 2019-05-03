@@ -1,0 +1,20 @@
+{
+  "name": "logo-detection",
+  "version": "1.0.0",
+  "description": "A simple web for logo detection",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon app.js"
+  },
+  "author": "Yiming Huang",
+  "license": "ISC",
+  "dependencies": {
+    "@google-cloud/vision": "^0.25.0",
+    "body-parser": "^1.18.3",
+    "express": "^4.16.4"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.11"
+  }
+}
