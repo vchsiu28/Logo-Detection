@@ -83,7 +83,7 @@ html,body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
       <div class="half">
 
 
-               <img id="inputFile" src="upload/ear.jpg" width="520" height="380" alt="yourImage">
+               <img id="output" src="upload/ear.jpg" width="520" height="380" alt="yourImage">
 
 
       
@@ -94,7 +94,9 @@ html,body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
 
         <table class="table white">
           <tr>
-            <td>What is this?</td>
+            <td>
+            <h5 id="line1">What is this?</h5>
+            </td>
           </tr>
           <tr>
             <td>大耳兽</td>
@@ -102,6 +104,41 @@ html,body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
           <tr>
             <td>A dog perhaps. </td>
           </tr>
+          <tr>
+            <td></td>
+          </tr>
+            <tr>
+            <td></td>
+          </tr>
+            <tr>
+            <td></td>
+          </tr>
+            <tr>
+            <td></td>
+          </tr>
+            <tr>
+            <td></td>
+          </tr>
+            <tr>
+            <td></td>
+          </tr>
+            <tr>
+            <td></td>
+          </tr>
+            <tr>
+            <td></td>
+          </tr>
+            <tr>
+            <td></td>
+          </tr>
+            <tr>
+            <td></td>
+          </tr>
+            <tr>
+            <td></td>
+          </tr>
+
+
      
         </table>
       </div>
@@ -114,15 +151,19 @@ html,body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
   <div class="row-padding" style="margin:0 0px">
     <div class="row-padding margin-bottom">
  
-    
-      
-
-      <button class="button grey" type="submit" id="custom-button" name="submit">Try a new image</button>
+   <input style="margin-left:2px;margin-top:20px;" type="file" id="image" name="image" size="20" onchange='openFile(event)'/>
+      <button type="submit" id="upload-button" name="submit">Upload</button>
 
 
  </div>
 </div>
 
+<script type="text/javascript" src="display.js">
+</script>
+
+
+<script type="text/javascript" src="cloud.js">
+</script>
 
 </body>
 
