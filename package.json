@@ -12,7 +12,8 @@
   "dependencies": {
     "@google-cloud/vision": "^0.25.0",
     "body-parser": "^1.18.3",
-    "express": "^4.16.4"
+    "express": "^4.16.4",
+    "mongoose": "^5.5.5"
   },
   "devDependencies": {
     "nodemon": "^1.18.11"

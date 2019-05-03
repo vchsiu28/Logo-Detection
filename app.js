@@ -1,8 +1,9 @@
 const express = require('express');
 const bodyParser = require('body-parser');
+const mongoose = require('mongoose');
 const vision = require('@google-cloud/vision');
 
-
+const config = require('./config.json');
 const historyRoutes = require('./routes/history');
 const predictRoutes = require('./routes/predict');
 
@@ -11,7 +12,7 @@ app.locals.googleClient = new vision.ImageAnnotatorClient();
 
 app.use(express.static('public'));
 
-app.use(bodyParser.json({limit: '50mb'}));
+app.use(bodyParser.json({ limit: '50mb' }));
 
 app.use((req, res, next) => {
     res.setHeader('Access-Control-Allow-Origin', '*');
@@ -29,4 +30,11 @@ app.use((req, res, next) => {
 app.use('/history', historyRoutes);
 app.use('/predict', predictRoutes);
 
-app.listen(8888);
+mongoose
+    .connect(config.dbUrl, { useNewUrlParser: true })
+    .then(() => {
+        app.listen(8888);
+    })
+    .catch(err => {
+        console.log(err);
+    });

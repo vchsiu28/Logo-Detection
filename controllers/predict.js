@@ -14,16 +14,18 @@ exports.postImagePred = (req, res, next) => {
     client
         .annotateImage(request)
         .then(arr => {
-            const rawResponse = arr[0];
-            const labelResponse = rawResponse.labelAnnotations.map(
+            const [
+                {
+                    labelAnnotations: rawLabelResponse,
+                    logoAnnotations: rawLogoResponse,
+                    webDetection: { visuallySimilarImages: rawWebResponse }
+                }
+            ] = arr;
+            const labelResponse = rawLabelResponse.map(
                 item => item.description
             );
-            const logoResponse = rawResponse.logoAnnotations.map(
-                item => item.description
-            );
-            const webResponse = rawResponse.webDetection.visuallySimilarImages.map(
-                item => item.url
-            )
+            const logoResponse = rawLogoResponse.map(item => item.description);
+            const webResponse = rawWebResponse.map(item => item.url);
             res.status(200).json({
                 label: labelResponse,
                 logo: logoResponse,
@@ -32,7 +34,8 @@ exports.postImagePred = (req, res, next) => {
         })
         .catch(err => {
             console.log(err);
-            res.status(400).json({ // IMPORTANT!!! For debug only
+            res.status(400).json({
+                // IMPORTANT!!! For debug only
                 message: err.message
             });
         });
