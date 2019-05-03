@@ -4,6 +4,7 @@ DAP Project-Logo Detection
 * Completed backend API for fetching image prediction result from google vision API and rendering the correct format to the front-end.
 * Added an example use of the above API in the front-end.
 * Completed front-end layout design.
+* Added backend API for fetching and saving search records (all to the same dummy user though, will continue with this part later).
 ## Usage
 1. Make sure node.js and npm are [installed](https://treehouse.github.io/installation-guides/mac/node-mac.html).
 2. Save the google cloud service account credential file as secret.json and store in the root folder.
