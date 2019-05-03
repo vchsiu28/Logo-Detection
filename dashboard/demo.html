@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>Logo Detection</title>
+    </head>
+    <body>
+        <input type="file" id="image" name="image" size="20" />
+        <button id="upload-button">Upload</button>
+        <p id="result-json">Result json: </p>
+        <p id="result-label">Result label: </p>
+        <script>
+            const reader = new FileReader();
+            document
+                .getElementById('upload-button')
+                .addEventListener('click', () => {
+                    const image = document.getElementById('image').files[0];
+                    reader.onload = event => {
+                        const imageByte = event.target.result;
+                        const url = new URL(
+                            'https://vision.googleapis.com/v1/images:annotate'
+                        );
+                        url.search = new URLSearchParams({
+                            key: 'd0e7b70b8d1499880f7630034a9d7a1d96b1c01' // The secret key for google cloud
+                        });
+                        const requestData = JSON.stringify({
+                            requests: [
+                                {
+                                    image: {
+                                        content: imageByte.split(',')[1]
+                                    },
+                                    features: [
+                                        {
+                                            type: 'LOGO_DETECTION'
+                                        }
+                                    ]
+                                }
+                            ]
+                        });
+                        fetch(url, {
+                            method: 'POST',
+                            body: requestData
+                        })
+                            .then(response => response.json())
+                            .then(data => {
+                                let resultJson = document.getElementById(
+                                    'result-json'
+                                );
+                                let resultLabel = document.getElementById(
+                                    'result-label'
+                                );
+                                resultJson.textContent += JSON.stringify(data);
+                                resultLabel.textContent +=
+                                    data.responses[0].logoAnnotations[0].description;
+                            })
+                            .catch(err => {
+                                console.log(err);
+                            });
+                    };
+                    reader.readAsDataURL(image);
+                });
+        </script>
+    </body>
+</html>
