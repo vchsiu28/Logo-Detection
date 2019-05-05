@@ -4,6 +4,7 @@ var getHistUrl = 'http://localhost:8888/history/user/';
 var postHistUrl = 'http://localhost:8888/history/user';
 
 const loadResponse = () => {
+    document.getElementById('result-json').innerHTML = 'Fetching results...';
     document.getElementById('result-json').textContent = imageResponse;
 };
 
@@ -118,6 +119,7 @@ displayed below the button once resolved.
 const loadButton = () => {
     const reader = new FileReader();
     document.getElementById('upload-button').addEventListener('click', () => {
+        document.getElementById('result-json').innerHTML='Wait a minute...';
         const image = document.getElementById('image').files[0];
         reader.onload = event => {
             const imageByte = event.target.result.split(',')[1];

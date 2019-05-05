@@ -5,12 +5,100 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta http-equiv="X-UA-Compatible" content="ie=edge" />
         <title>Logo Detection</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <style>
+        html,body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
+        </style>
     </head>
-    <body>
-        <input type="file" id="image" name="image" size="20" />
-        <button id="upload-button">Upload</button>
-        <p id="result-json"></p>
+    <body class="light-grey">
+
+        <!-- Top container -->
+        <div class="bar top black large" style="z-index:4">
+          <button class="bar-item button hide-large hover-none hover-text-light-grey" onclick="w3_open();"><i class="fa fa-bars"></i>  Menu</button>
+          <span class="bar-item right">Logo Detection</span>
+        </div>
+
+       
+
+            <!-- !PAGE  -->
+            <div class="main" style="margin-left:10px;margin-top:43px;">
+
+
+              <!-- Header -->
+              <header class="container" style="padding-top:22px">
+                <h5><b><i class="fa fa-dashboard"></i> My Dashboard</b></h5>
+              </header>
+
+            <!-- Property buttons -->  
+            <div class="row-padding margin-bottom">
+            <h5 style="margin-left:10px">Upload your image to see what it is!</h5>
+            </div>
+              <div class="row-padding margin-bottom">
+
+                <div class="third">
+                  <div class="container teal padding-small">
+                    <button class="button teal" id="object-button">Objects</button>
+
+                    <div class="clear"></div>
+                  </div>
+
+                </div>
+
+                <div class="third">
+                  <div class="container orange padding-small">
+                    <button class="button orange" id="logo-button">Logo</button>
+                    <div class="clear"></div>
+                  </div>
+                </div>
+
+
+
+
+                <div class="third">
+                  <div class="container red padding-small">
+                    <button class="button red" id="web-button">Web</button>
+                    <div class="clear"></div>
+                  </div>
+                </div>
+
+
+
+        <!-- Image and results-->
+          <div class="panel">
+            <div class="row-padding" style="margin:0 450px;margin-top:20px">
+
+              <div style="width: 450px; height: 450px;">
+                  <img id="output" src="upload/default-image.png" style="width: inherit; height: inherit" />
+              </div>
+
+
+        <input type="file" id="image" name="image" size="20" onchange='openFile(event)'/>
+        <button id="upload-button" style="margin-top:20px">Upload</button>
+        <p color="red" style="text-align: center" id="result-json">hello</p>
+
         <ul id="user-history"></ul>
         <script src="js/main.js"></script>
+
+
+
+</div>
+</div>
+
+<script type="text/javascript" src="js/button.js">
+</script>
+
+<script>
+  var object = 'This shows object'
+  var logo = 'This shows logo'
+  var web = 'This shows web'
+</script>
+
+
+<script type="text/javascript" src="js/display.js">
+</script>
+
+
     </body>
 </html>
