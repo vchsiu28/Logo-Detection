@@ -21,7 +21,7 @@ If you want to check what it is, click on "Object" button.
 Click on "Logo" button to see its logo/brand name.
 
 ![web](https://github.com/vchsiu28/Logo-Detection/blob/master/img/web.png)
-"Web" button searches for websites associated with the uploaded image. 
+"Web" button displays the closest image related to the uploaded image. 
 
 Links are potential e-commerce sites where you can find/purchase the item.   
 Fetch response are stored in our user history database for user analytics. 
