@@ -127,6 +127,18 @@ const loadButton = () => {
                 .then(searchResult => {
                     imageResponse = JSON.stringify(searchResult);
                     loadResponse();
+
+
+
+
+                    // parse json    
+                    json = imageResponse;
+                    object = json.labelAnnotations[0].description;
+                    logo = json.logoAnnotations[0].description;
+                    web = json.webDetection[0].fullMatchingImages;
+
+                    
+
                     return Promise.resolve(searchResult);
                 })
                 .catch(err => {

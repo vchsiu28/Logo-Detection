@@ -1,0 +1,1280 @@
+{
+  "cropHintsAnnotation": {
+    "cropHints": [
+      {
+        "boundingPoly": {
+          "vertices": [
+            {},
+            {
+              "x": 1356
+            },
+            {
+              "x": 1356,
+              "y": 1675
+            },
+            {
+              "y": 1675
+            }
+          ]
+        },
+        "confidence": 0.79999995,
+        "importanceFraction": 0.97999996
+      },
+      {
+        "boundingPoly": {
+          "vertices": [
+            {},
+            {
+              "x": 1559
+            },
+            {
+              "x": 1559,
+              "y": 1574
+            },
+            {
+              "y": 1574
+            }
+          ]
+        },
+        "confidence": 0.79999995,
+        "importanceFraction": 1
+      },
+      {
+        "boundingPoly": {
+          "vertices": [
+            {},
+            {
+              "x": 1559
+            },
+            {
+              "x": 1559,
+              "y": 1306
+            },
+            {
+              "y": 1306
+            }
+          ]
+        },
+        "confidence": 0.79999995,
+        "importanceFraction": 1
+      }
+    ]
+  },
+  "imagePropertiesAnnotation": {
+    "cropHints": [
+      {
+        "boundingPoly": {
+          "vertices": [
+            {},
+            {
+              "x": 1356
+            },
+            {
+              "x": 1356,
+              "y": 1675
+            },
+            {
+              "y": 1675
+            }
+          ]
+        },
+        "confidence": 0.79999995,
+        "importanceFraction": 0.97999996
+      },
+      {
+        "boundingPoly": {
+          "vertices": [
+            {},
+            {
+              "x": 1559
+            },
+            {
+              "x": 1559,
+              "y": 1574
+            },
+            {
+              "y": 1574
+            }
+          ]
+        },
+        "confidence": 0.79999995,
+        "importanceFraction": 1
+      },
+      {
+        "boundingPoly": {
+          "vertices": [
+            {},
+            {
+              "x": 1559
+            },
+            {
+              "x": 1559,
+              "y": 1306
+            },
+            {
+              "y": 1306
+            }
+          ]
+        },
+        "confidence": 0.79999995,
+        "importanceFraction": 1
+      }
+    ],
+    "dominantColors": {
+      "colors": [
+        {
+          "color": {
+            "blue": 103,
+            "green": 116,
+            "red": 151
+          },
+          "hex": "977467",
+          "percent": 51.04749704559468,
+          "percentRounded": 51,
+          "pixelFraction": 0.14214286,
+          "rgb": "151, 116,\n 103",
+          "score": 0.46283093
+        },
+        {
+          "color": {
+            "blue": 128,
+            "green": 141,
+            "red": 176
+          },
+          "hex": "B08D80",
+          "percent": 26.391844853641373,
+          "percentRounded": 26,
+          "pixelFraction": 0.11552381,
+          "rgb": "176, 141,\n 128",
+          "score": 0.23928621
+        },
+        {
+          "color": {
+            "blue": 66,
+            "green": 82,
+            "red": 115
+          },
+          "hex": "735242",
+          "percent": 7.483649720726923,
+          "percentRounded": 7,
+          "pixelFraction": 0.020333333,
+          "rgb": "115, 82,\n 66",
+          "score": 0.0678518
+        },
+        {
+          "color": {
+            "blue": 136,
+            "green": 156,
+            "red": 185
+          },
+          "hex": "B99C88",
+          "percent": 4.567007431342769,
+          "percentRounded": 5,
+          "pixelFraction": 0.029095238,
+          "rgb": "185, 156,\n 136",
+          "score": 0.04140756
+        },
+        {
+          "color": {
+            "blue": 154,
+            "green": 182,
+            "red": 212
+          },
+          "hex": "D4B69A",
+          "percent": 2.6565133347958696,
+          "percentRounded": 3,
+          "pixelFraction": 0.01747619,
+          "rgb": "212, 182,\n 154",
+          "score": 0.024085736
+        },
+        {
+          "color": {
+            "blue": 131,
+            "green": 182,
+            "red": 220
+          },
+          "hex": "DCB683",
+          "percent": 2.111696139543413,
+          "percentRounded": 2,
+          "pixelFraction": 0.0024761904,
+          "rgb": "220, 182,\n 131",
+          "score": 0.019146057
+        },
+        {
+          "color": {
+            "blue": 106,
+            "green": 155,
+            "red": 190
+          },
+          "hex": "BE9B6A",
+          "percent": 1.761840991198938,
+          "percentRounded": 2,
+          "pixelFraction": 0.0021904763,
+          "rgb": "190, 155,\n 106",
+          "score": 0.015974035
+        },
+        {
+          "color": {
+            "blue": 86,
+            "green": 111,
+            "red": 138
+          },
+          "hex": "8A6F56",
+          "percent": 1.4363768202123242,
+          "percentRounded": 1,
+          "pixelFraction": 0.009380952,
+          "rgb": "138, 111,\n 86",
+          "score": 0.013023158
+        },
+        {
+          "color": {
+            "blue": 62,
+            "green": 85,
+            "red": 110
+          },
+          "hex": "6E553E",
+          "percent": 1.3494153673701466,
+          "percentRounded": 1,
+          "pixelFraction": 0.005857143,
+          "rgb": "110, 85,\n 62",
+          "score": 0.012234707
+        },
+        {
+          "color": {
+            "blue": 37,
+            "green": 74,
+            "red": 111
+          },
+          "hex": "6F4A25",
+          "percent": 1.1941582955735686,
+          "percentRounded": 1,
+          "pixelFraction": 0.0015238095,
+          "rgb": "111, 74,\n 37",
+          "score": 0.010827042
+        }
+      ]
+    }
+  },
+  "labelAnnotations": [
+    {
+      "description": "Bag",
+      "mid": "/m/0n5v01m",
+      "score": 0.93920386,
+      "topicality": 0.93920386
+    },
+    {
+      "description": "Handbag",
+      "mid": "/m/080hkjn",
+      "score": 0.93584424,
+      "topicality": 0.93584424
+    },
+    {
+      "description": "Fashion accessory",
+      "mid": "/m/0463sg",
+      "score": 0.9189443,
+      "topicality": 0.9189443
+    },
+    {
+      "description": "Pink",
+      "mid": "/m/01fklc",
+      "score": 0.8907881,
+      "topicality": 0.8907881
+    },
+    {
+      "description": "Leather",
+      "mid": "/m/04lbp",
+      "score": 0.8725554,
+      "topicality": 0.8725554
+    },
+    {
+      "description": "Brown",
+      "mid": "/m/09q2t",
+      "score": 0.82454044,
+      "topicality": 0.82454044
+    },
+    {
+      "description": "Shoulder bag",
+      "mid": "/m/0hgrzkp",
+      "score": 0.7338686,
+      "topicality": 0.7338686
+    },
+    {
+      "description": "Coin purse",
+      "mid": "/m/080jpd1",
+      "score": 0.72909766,
+      "topicality": 0.72909766
+    },
+    {
+      "description": "Wallet",
+      "mid": "/m/02_vjy",
+      "score": 0.71766466,
+      "topicality": 0.71766466
+    },
+    {
+      "description": "Material property",
+      "mid": "/m/0457gc6",
+      "score": 0.7066209,
+      "topicality": 0.7066209
+    },
+    {
+      "description": "Beige",
+      "mid": "/m/03hzcs",
+      "score": 0.66557527,
+      "topicality": 0.66557527
+    },
+    {
+      "description": "Chain",
+      "mid": "/m/0269r2s",
+      "score": 0.629713,
+      "topicality": 0.629713
+    },
+    {
+      "description": "Magenta",
+      "mid": "/m/0ckc5",
+      "score": 0.5334161,
+      "topicality": 0.5334161
+    },
+    {
+      "description": "Brand",
+      "mid": "/m/01cd9",
+      "score": 0.5202584,
+      "topicality": 0.5202584
+    },
+    {
+      "description": "Rectangle",
+      "mid": "/m/0j62f",
+      "score": 0.50473684,
+      "topicality": 0.50473684
+    }
+  ],
+  "localizedObjectAnnotations": [
+    {
+      "boundingPoly": {
+        "normalizedVertices": [
+          {
+            "x": 0.015735928,
+            "y": 0.27633855
+          },
+          {
+            "x": 0.89296997,
+            "y": 0.27633855
+          },
+          {
+            "x": 0.89296997,
+            "y": 0.72272027
+          },
+          {
+            "x": 0.015735928,
+            "y": 0.72272027
+          }
+        ]
+      },
+      "mid": "/m/0n5v01m",
+      "name": "Bag",
+      "score": 0.730976
+    }
+  ],
+  "logoAnnotations": [
+    {
+      "boundingPoly": {
+        "vertices": [
+          {
+            "x": 503,
+            "y": 796
+          },
+          {
+            "x": 817,
+            "y": 796
+          },
+          {
+            "x": 817,
+            "y": 1119
+          },
+          {
+            "x": 503,
+            "y": 1119
+          }
+        ]
+      },
+      "description": "gucci",
+      "mid": "/m/03gc5x",
+      "score": 0.88215
+    }
+  ],
+  "safeSearchAnnotation": {
+    "adult": "VERY_UNLIKELY",
+    "medical": "UNLIKELY",
+    "racy": "UNLIKELY",
+    "spoof": "VERY_UNLIKELY",
+    "violence": "VERY_UNLIKELY"
+  },
+  "webDetection": {
+    "bestGuessLabels": [
+      {
+        "label": "gucci marmont super mini",
+        "languageCode": "en"
+      }
+    ],
+    "fullMatchingImages": [
+      {
+        "url": "https://n.nordstrommedia.com/id/sr2/201649ff-65e1-45b2-9ba3-b292a64b58cc.jpeg?crop=pad&pad_color=FFF&format=jpeg&trim=color&trimcolor=FFF&w=1660&h=1783"
+      },
+      {
+        "url": "https://n.nordstrommedia.com/id/sr2/201649ff-65e1-45b2-9ba3-b292a64b58cc.jpeg?crop=pad&pad_color=FFF&format=jpeg&trim=color&trimcolor=FFF&w=1200&h=1289"
+      },
+      {
+        "url": "https://n.nordstrommedia.com/id/sr2/201649ff-65e1-45b2-9ba3-b292a64b58cc.jpeg?crop=pad&pad_color=FFF&format=jpeg&trim=color&trimcolor=FFF&w=780&h=838"
+      },
+      {
+        "url": "https://media.gucci.com/style/DarkGray_Center_0_0_490x490/1527604944/476433_DSVRT_5729_001_057_0000_Light-GG-Marmont-matelass-leather-super-mini-bag.jpg"
+      }
+    ],
+    "pagesWithMatchingImages": [
+      {
+        "fullMatchingImages": [
+          {
+            "url": "https://n.nordstrommedia.com/id/sr2/201649ff-65e1-45b2-9ba3-b292a64b58cc.jpeg?crop=pad&pad_color=FFF&format=jpeg&trim=color&trimcolor=FFF&w=780&h=838"
+          },
+          {
+            "url": "https://n.nordstrommedia.com/id/sr2/201649ff-65e1-45b2-9ba3-b292a64b58cc.jpeg?crop=pad&pad_color=FFF&format=jpeg&trim=color&trimcolor=FFF&w=1660&h=1783"
+          },
+          {
+            "url": "https://n.nordstrommedia.com/id/sr2/201649ff-65e1-45b2-9ba3-b292a64b58cc.jpeg?crop=pad&pad_color=FFF&format=jpeg&trim=color&trimcolor=FFF&w=1200&h=1289"
+          },
+          {
+            "url": "https://n.nordstrommedia.com/id/sr2/201649ff-65e1-45b2-9ba3-b292a64b58cc.jpeg?crop=pad&pad_color=FFF&format=jpeg&trim=color&trimcolor=FFF&w=489&h=750"
+          },
+          {
+            "url": "https://n.nordstrommedia.com/id/sr2/201649ff-65e1-45b2-9ba3-b292a64b58cc.jpeg?crop=pad&pad_color=FFF&format=jpeg&trim=color&trimcolor=FFF&w=1318&h=1416"
+          },
+          {
+            "url": "https://n.nordstrommedia.com/id/sr2/201649ff-65e1-45b2-9ba3-b292a64b58cc.jpeg?crop=pad&pad_color=FFF&format=jpeg&trim=color&trimcolor=FFF&w=587&h=900"
+          },
+          {
+            "url": "https://n.nordstrommedia.com/id/sr2/201649ff-65e1-45b2-9ba3-b292a64b58cc.jpeg?crop=pad&pad_color=FFF&format=jpeg&trim=color&trimcolor=FFF&w=489&h=525"
+          }
+        ],
+        "pageTitle": "Gucci <b>Supermini GG Marmont</b> 2.0 Matelassé Leather Shoulder Bag ...",
+        "url": "https://shop.nordstrom.com/s/gucci-supermini-gg-marmont-2-0-matelasse-leather-shoulder-bag/4643234"
+      },
+      {
+        "fullMatchingImages": [
+          {
+            "url": "https://media.gucci.com/style/DarkGray_Center_0_0_600x314/1527604944/476433_DSVRT_5729_001_057_0000_Light.jpg"
+          },
+          {
+            "url": "https://media.gucci.com/style/DarkGray_Center_0_0_490x490/1527604944/476433_DSVRT_5729_001_057_0000_Light.jpg"
+          },
+          {
+            "url": "https://media.gucci.com/style/DarkGray_Center_0_0_800x800/1527604944/476433_DSVRT_5729_001_057_0000_Light-GG-Marmont-matelass-leather-super-mini-bag.jpg"
+          },
+          {
+            "url": "https://media.gucci.com/style/DarkGray_Center_0_0_490x490/1527604944/476433_DSVRT_5729_001_057_0000_Light-GG-Marmont-matelass-leather-super-mini-bag.jpg"
+          }
+        ],
+        "pageTitle": "<b>GG Marmont</b> matelassé leather <b>super mini</b> bag in Dusty pink ... - Gucci",
+        "url": "https://www.gucci.com/us/en/pr/women/womens-handbags/womens-mini-bags/gg-marmont-matelasse-leather-super-mini-bag-p-476433DSVRT5729"
+      },
+      {
+        "fullMatchingImages": [
+          {
+            "url": "https://media.gucci.com/style/DarkGray_Center_0_0_600x314/1527604944/476433_DSVRT_5729_001_057_0000_Light.jpg"
+          },
+          {
+            "url": "https://media.gucci.com/style/DarkGray_Center_0_0_490x490/1527604944/476433_DSVRT_5729_001_057_0000_Light.jpg"
+          },
+          {
+            "url": "https://media.gucci.com/style/DarkGray_Center_0_0_800x800/1527604944/476433_DSVRT_5729_001_057_0000_Light-GG-Marmont-matelass-leather-super-mini-bag.jpg"
+          },
+          {
+            "url": "https://media.gucci.com/style/DarkGray_Center_0_0_490x490/1527604944/476433_DSVRT_5729_001_057_0000_Light-GG-Marmont-matelass-leather-super-mini-bag.jpg"
+          }
+        ],
+        "pageTitle": "<b>GG Marmont</b> matelassé leather <b>super mini</b> bag - Gucci Women&#39;s ...",
+        "url": "https://www.gucci.com/int/en/pr/women/handbags/womens-mini-bags/gg-marmont-matelasse-leather-super-mini-bag-p-476433DSVRT5729"
+      },
+      {
+        "fullMatchingImages": [
+          {
+            "url": "https://media.gucci.com/style/White_Center_0_0_235x235/1527604944/476433_DSVRT_5729_001_057_0000_Light-GG-Marmont-matelass-leather-super-mini-bag.jpg"
+          },
+          {
+            "url": "https://media.gucci.com/style/DarkGray_Center_0_0_1200x1200/1527604944/476433_DSVRT_5729_001_057_0000_Light-GG-Marmont-matelass-leather-super-mini-bag.jpg"
+          },
+          {
+            "url": "https://media.gucci.com/style/DarkGray_Center_0_0_490x490/1527604944/476433_DSVRT_5729_001_057_0000_Light-GG-Marmont-matelass-leather-super-mini-bag.jpg"
+          }
+        ],
+        "pageTitle": "<b>GG Marmont</b> matelassé leather <b>super mini</b> bag - Gucci Mini Bags ...",
+        "url": "https://www.gucci.com/it/en_gb/pr/women/handbags/womens-mini-bags/gg-marmont-matelasse-leather-super-mini-bag-p-476433DSVRT5729"
+      },
+      {
+        "fullMatchingImages": [
+          {
+            "url": "https://media.gucci.com/style/DarkGray_Center_0_0_490x490/1527604944/476433_DSVRT_5729_001_057_0000_Light-GG-Marmont-matelass-leather-super-mini-bag.jpg"
+          }
+        ],
+        "pageTitle": "<b>GG Marmont</b> matelassé leather <b>super mini</b> bag - Gucci Mini Bags ...",
+        "url": "https://www.gucci.com/at/en_gb/pr/women/handbags/womens-mini-bags/gg-marmont-matelasse-leather-super-mini-bag-p-476433DSVRT5729"
+      },
+      {
+        "pageTitle": "Don&#39;t Miss This Deal on <b>GG Marmont</b> Matelasse Leather <b>Super Mini</b> ...",
+        "partialMatchingImages": [
+          {
+            "url": "https://images.prod.meredith.com/product/1657bf50b6744c346570918e3c44e635/1551567068447/l/gg-marmont-matelasse-leather-super-mini-bag-multicolor-gucci-shoulder-bags"
+          }
+        ],
+        "url": "https://www.marthastewart.com/shop/gucci-gg-marmont-matelasse-leather-super-mini-bag-multicolor-gucci-shoulder-bags-p1657bf50b6744c346570918e3c44e635.html"
+      },
+      {
+        "pageTitle": "<b>GG Marmont</b> matelassé leather <b>super mini</b> bag - dusty pink chevron ...",
+        "partialMatchingImages": [
+          {
+            "url": "https://crawler-cache-jellolabs-com.imgix.net/nxwCyGmJ_SvqfGJa/source_photo.jpg?auto=compress,format"
+          }
+        ],
+        "url": "https://www.shopspring.com/products/55068623"
+      },
+      {
+        "pageTitle": "Gucci <b>Gg Marmont Super Mini</b> Green | Mount Mercy University",
+        "partialMatchingImages": [
+          {
+            "url": "https://media.gucci.com/style/DarkGray_Center_0_0_2400x2400/1490623208/476433_DSVRT_5729_001_090_0000_Light-GG-Marmont-matelass-leather-super-mini-bag.jpg"
+          }
+        ],
+        "url": "https://www.mtmercy.edu/gucci-gg-marmont-super-mini-green/"
+      },
+      {
+        "pageTitle": "<b>Gucci Marmont</b> Matelasse <b>Mini</b> Camera Bag Review | The Art of ...",
+        "partialMatchingImages": [
+          {
+            "url": "https://item2.tradesy.com/images/gucci-marmont-gg-matelasse-mini-chain-camera-rose-antique-leather-cross-body-bag-24053791-0-1.jpg?width=440&height=440"
+          }
+        ],
+        "url": "https://www.artofmikemignola.com/gucci-marmont-matelasse-mini-camera-bag-review/"
+      },
+      {
+        "pageTitle": "Amazon.com: Gucci <b>GG Marmont</b> matelassé Leather <b>Super Mini</b> Bag ...",
+        "partialMatchingImages": [
+          {
+            "url": "https://images-na.ssl-images-amazon.com/images/I/61YuuSBMVHL._UY625_.jpg"
+          },
+          {
+            "url": "https://images-na.ssl-images-amazon.com/images/I/61YuuSBMVHL._UL1010_.jpg"
+          },
+          {
+            "url": "https://images-na.ssl-images-amazon.com/images/I/61YuuSBMVHL._UY500_.jpg"
+          },
+          {
+            "url": "https://images-na.ssl-images-amazon.com/images/I/61YuuSBMVHL._UY695_.jpg"
+          },
+          {
+            "url": "https://images-na.ssl-images-amazon.com/images/I/61YuuSBMVHL._UY535_.jpg"
+          },
+          {
+            "url": "https://images-na.ssl-images-amazon.com/images/I/61YuuSBMVHL._UY675_.jpg"
+          },
+          {
+            "url": "https://images-na.ssl-images-amazon.com/images/I/41WNhcrw0-L._SY395_QL70_.jpg"
+          },
+          {
+            "url": "https://images-na.ssl-images-amazon.com/images/I/61YuuSBMVHL._UY575_.jpg"
+          },
+          {
+            "url": "https://images-na.ssl-images-amazon.com/images/I/41WNhcrw0-L.jpg"
+          }
+        ],
+        "url": "https://www.amazon.com/Gucci-Marmont-matelass%C3%A9-Leather-Handbag/dp/B01D651L30"
+      },
+      {
+        "pageTitle": "Lyst - Gucci <b>Gg Marmont</b> Matelassé Leather <b>Super Mini</b> Bag in Natural",
+        "partialMatchingImages": [
+          {
+            "url": "https://cdnb.lystit.com/photos/gucci/6af1a650/gucci-Nude-Gg-Marmont-Matelasse-Leather-Super-Mini-Bag.jpeg"
+          }
+        ],
+        "url": "https://www.lyst.com/bags/gucci-gg-marmont-matelasse-leather-super-mini-bag/"
+      },
+      {
+        "pageTitle": "<b>Gucci Marmont</b> Gg <b>Super Mini</b> Black Leather Cross Body Bag ...",
+        "partialMatchingImages": [
+          {
+            "url": "https://img-static.tradesy.com/item/25139441/gucci-marmont-gg-matelasse-quilted-leather-super-mini-taupe-cross-body-bag-0-2-300-300.jpg"
+          }
+        ],
+        "url": "https://www.tradesy.com/i/gucci-marmont-gg-super-mini-black-leather-cross-body-bag/25030665/"
+      },
+      {
+        "pageTitle": "<b>Gucci Marmont</b> Green <b>Super Mini</b> | MIT Hillel",
+        "partialMatchingImages": [
+          {
+            "url": "https://media.gucci.com/style/DarkGray_Center_0_0_2400x2400/1490623208/476433_DSVRT_5729_001_090_0000_Light-GG-Marmont-matelass-leather-super-mini-bag.jpg"
+          }
+        ],
+        "url": "http://hillel.mit.edu/gucci-marmont-green-super-mini/"
+      },
+      {
+        "pageTitle": "Gucci <b>Gg Marmont</b> Mini Vs <b>Super Mini</b> | MIT Hillel",
+        "partialMatchingImages": [
+          {
+            "url": "https://media.gucci.com/style/DarkGray_Center_0_0_2400x2400/1490623208/476433_DSVRT_5729_001_090_0000_Light-GG-Marmont-matelass-leather-super-mini-bag.jpg"
+          }
+        ],
+        "url": "http://hillel.mit.edu/gucci-gg-marmont-mini-vs-super-mini/"
+      },
+      {
+        "pageTitle": "Gucci <b>Mini</b> Sac <b>Gg Marmont</b> | Mount Mercy University",
+        "partialMatchingImages": [
+          {
+            "url": "https://media.gucci.com/style/DarkGray_Center_0_0_2400x2400/1490623208/476433_DSVRT_5729_001_090_0000_Light-GG-Marmont-matelass-leather-super-mini-bag.jpg"
+          }
+        ],
+        "url": "https://www.mtmercy.edu/gucci-mini-sac-gg-marmont/"
+      },
+      {
+        "pageTitle": "<b>Gucci Marmont</b> Matelasse <b>Mini</b> Bag Singapore | Mount Mercy ...",
+        "partialMatchingImages": [
+          {
+            "url": "https://media.gucci.com/style/DarkGray_Center_0_0_800x800/1490623208/476433_DSVRT_5729_001_090_0000_Light-GG-Marmont-matelass-leather-super-mini-bag.jpg"
+          }
+        ],
+        "url": "https://www.mtmercy.edu/gucci-marmont-matelasse-mini-bag-singapore/"
+      },
+      {
+        "pageTitle": "BRAND NEW AUTHENTIC Gucci <b>GG Marmont</b> Leather <b>Super Mini</b> ...",
+        "partialMatchingImages": [
+          {
+            "url": "https://i.ebayimg.com/images/g/zM4AAOSw3YZcgDar/s-l300.jpg"
+          },
+          {
+            "url": "https://i.ebayimg.com/images/i/223438099888-0-1/s-l1000.jpg"
+          }
+        ],
+        "url": "https://www.ebay.com/itm/New-Gucci-GG-Marmont-Matelasse-Leather-Super-Mini-Shoulder-Bag-Red-/283382568809"
+      },
+      {
+        "pageTitle": "<b>Gucci Marmont Super Mini</b> Hong Kong Price | IUCN Water",
+        "partialMatchingImages": [
+          {
+            "url": "https://www.bragmybag.com/wp-content/uploads/2019/01/Gucci-Super-Mini-Marmont-Bag-7.jpg"
+          }
+        ],
+        "url": "http://www.waterandnature.org/gucci-marmont-super-mini-hong-kong-price/"
+      },
+      {
+        "pageTitle": "<b>Gucci Super Mini Marmont</b> Bag | Bragmybag",
+        "partialMatchingImages": [
+          {
+            "url": "https://www.bragmybag.com/wp-content/uploads/2019/01/Gucci-Super-Mini-Marmont-Bag-7.jpg"
+          }
+        ],
+        "url": "https://www.bragmybag.com/gucci-super-mini-marmont-bag/"
+      },
+      {
+        "pageTitle": "Shopping Special: <b>GG Marmont</b> Matelasse Leather <b>Super Mini</b> Bag ...",
+        "partialMatchingImages": [
+          {
+            "url": "https://images.prod.meredith.com/product/1657bf50b6744c346570918e3c44e635/1551567068447/l/gg-marmont-matelasse-leather-super-mini-bag-multicolor-gucci-shoulder-bags"
+          }
+        ],
+        "url": "https://www.shape.com/shop/gucci-gg-marmont-matelasse-leather-super-mini-bag-multicolor-gucci-shoulder-bags-p1657bf50b6744c346570918e3c44e635.html"
+      },
+      {
+        "pageTitle": "Gucci <b>Gg Marmont</b> Matelasse <b>Mini</b> Vs <b>Small</b> | Mount Mercy University",
+        "partialMatchingImages": [
+          {
+            "url": "https://media.gucci.com/style/DarkGray_Center_0_0_2400x2400/1490623208/476433_DSVRT_5729_001_090_0000_Light-GG-Marmont-matelass-leather-super-mini-bag.jpg"
+          }
+        ],
+        "url": "https://www.mtmercy.edu/gucci-gg-marmont-matelasse-mini-vs-small/"
+      },
+      {
+        "pageTitle": "<b>GG Marmont</b> matelassé leather <b>super mini</b> bag [476433DSVRT5729 ...",
+        "partialMatchingImages": [
+          {
+            "url": "https://guccious.com/images/pic/476433DSVRT5729_2.jpg"
+          }
+        ],
+        "url": "https://guccious.com/gg-marmont-matelass%C3%A9-leather-super-mini-bag-p-2690.html"
+      },
+      {
+        "pageTitle": "Gucci <b>GG Marmont</b> matelassé leather <b>super mini</b> bag | Airfrov",
+        "partialMatchingImages": [
+          {
+            "url": "https://s3.ap-southeast-1.amazonaws.com/airfrov/2017-10-13_8702.8737761852.jpg"
+          }
+        ],
+        "url": "https://www.airfrov.com/products/140819-ladies-fashion-and-accessories-gucci-gg-marmont-matelasse-leather-super-mini-bag"
+      },
+      {
+        "pageTitle": "<b>GG Marmont</b> matelassé leather <b>super mini</b> bag in 2019 | Bag Lady ...",
+        "partialMatchingImages": [
+          {
+            "url": "https://i.pinimg.com/originals/32/54/b1/3254b170125c0e771c78e0141c4cbf54.jpg"
+          }
+        ],
+        "url": "https://www.pinterest.com/pin/434949276506758257/"
+      },
+      {
+        "pageTitle": "<b>Gucci Mini</b> Bag - ShopStyle",
+        "partialMatchingImages": [
+          {
+            "url": "https://img.shopstyle-cdn.com/pim/76/60/76601667e0a8dc1b27dc3e721566075b_xlarge.jpg"
+          },
+          {
+            "url": "https://img.shopstyle-cdn.com/pim/dc/f2/dcf2be8156f4ead5f337a7284c4818e9_xlarge.jpg"
+          },
+          {
+            "url": "https://img.shopstyle-cdn.com/pim/a2/4f/a24fc91702c4e1b5a558c9281c5d5f99_xlarge.jpg"
+          }
+        ],
+        "url": "https://www.shopstyle.com/browse?fts=gucci+mini+bag"
+      },
+      {
+        "pageTitle": "<b>Gucci Marmont</b> Gg Matelassé Quilted Leather <b>Super Mini</b> Taupe ...",
+        "partialMatchingImages": [
+          {
+            "url": "https://img-static.tradesy.com/item/24983928/gucci-marmont-gg-matelasse-quilted-leather-super-mini-taupe-cross-body-bag-0-0-960-960.jpg"
+          }
+        ],
+        "url": "https://www.tradesy.com/i/gucci-marmont-gg-matelasse-quilted-leather-super-mini-taupe-cross-body-bag/24983928/"
+      },
+      {
+        "pageTitle": "Spectacular Savings on <b>GG Marmont Super Mini</b> shoulder bag",
+        "partialMatchingImages": [
+          {
+            "url": "https://images.prod.meredith.com/product/c03dd0743924e30d06657b3f9b1a6183/1555539037249/m/gg-marmont-matelasse-leather-super-mini-bag-multicolor-gucci-shoulder-bags"
+          }
+        ],
+        "url": "https://www.parenting.com/shop/gucci-gg-marmont-super-mini-shoulder-bag-pdbf3ab98660e5ae86de27a9b03b52fbe.html"
+      },
+      {
+        "pageTitle": "<b>Gucci Marmont</b> Gg Matelassé Quilted Leather <b>Super Mini</b> Taupe ...",
+        "partialMatchingImages": [
+          {
+            "url": "https://img-static.tradesy.com/item/25139441/gucci-marmont-gg-matelasse-quilted-leather-super-mini-taupe-cross-body-bag-0-2-300-300.jpg"
+          },
+          {
+            "url": "https://img-static.tradesy.com/item/25139441/gucci-marmont-gg-matelasse-quilted-leather-super-mini-taupe-cross-body-bag-0-2-960-960.jpg"
+          },
+          {
+            "url": "https://img-static.tradesy.com/item/25070875/gucci-marmont-gg-matelasse-super-mini-leather-cross-body-bag-0-1-300-300.jpg"
+          }
+        ],
+        "url": "https://www.tradesy.com/i/gucci-marmont-gg-matelasse-quilted-leather-super-mini-taupe-cross-body-bag/25139441/"
+      },
+      {
+        "fullMatchingImages": [
+          {
+            "url": "https://n.nordstrommedia.com/id/sr2/201649ff-65e1-45b2-9ba3-b292a64b58cc.jpeg?crop=pad&pad_color=FFF&format=jpeg&trim=color&trimcolor=FFF&w=780&h=838"
+          },
+          {
+            "url": "https://n.nordstrommedia.com/id/sr2/201649ff-65e1-45b2-9ba3-b292a64b58cc.jpeg?crop=pad&pad_color=FFF&format=jpeg&trim=color&trimcolor=FFF&w=1660&h=1783"
+          },
+          {
+            "url": "https://n.nordstrommedia.com/id/sr2/201649ff-65e1-45b2-9ba3-b292a64b58cc.jpeg?crop=pad&pad_color=FFF&format=jpeg&trim=color&trimcolor=FFF&w=1200&h=1289"
+          },
+          {
+            "url": "https://n.nordstrommedia.com/id/sr2/201649ff-65e1-45b2-9ba3-b292a64b58cc.jpeg?crop=pad&pad_color=FFF&format=jpeg&trim=color&trimcolor=FFF&w=489&h=750"
+          },
+          {
+            "url": "https://n.nordstrommedia.com/id/sr2/201649ff-65e1-45b2-9ba3-b292a64b58cc.jpeg?crop=pad&pad_color=FFF&format=jpeg&trim=color&trimcolor=FFF&w=1318&h=1416"
+          },
+          {
+            "url": "https://n.nordstrommedia.com/id/sr2/201649ff-65e1-45b2-9ba3-b292a64b58cc.jpeg?crop=pad&pad_color=FFF&format=jpeg&trim=color&trimcolor=FFF&w=587&h=900"
+          },
+          {
+            "url": "https://n.nordstrommedia.com/id/sr2/201649ff-65e1-45b2-9ba3-b292a64b58cc.jpeg?crop=pad&pad_color=FFF&format=jpeg&trim=color&trimcolor=FFF&w=489&h=525"
+          }
+        ],
+        "pageTitle": "Gucci <b>Supermini GG Marmont</b> 2.0 Matelassé Leather Shoulder Bag ...",
+        "url": "http://www.prospafinancial.com.au/held/nordstrom.php?s/gucci-supermini-gg-marmont-2-0-matelasse-leather-shoulder-bag/4643234?origin=category-personalizedsort&breadcrumb=Home%2FWomen%2FHandbags%2FDesigner%20Under%20%241500&color=porcelain%20rose"
+      },
+      {
+        "fullMatchingImages": [
+          {
+            "url": "https://n.nordstrommedia.com/id/sr2/201649ff-65e1-45b2-9ba3-b292a64b58cc.jpeg?crop=pad&pad_color=FFF&format=jpeg&trim=color&trimcolor=FFF&w=780&h=838"
+          },
+          {
+            "url": "https://n.nordstrommedia.com/id/sr2/201649ff-65e1-45b2-9ba3-b292a64b58cc.jpeg?crop=pad&pad_color=FFF&format=jpeg&trim=color&trimcolor=FFF&w=1660&h=1783"
+          },
+          {
+            "url": "https://n.nordstrommedia.com/id/sr2/201649ff-65e1-45b2-9ba3-b292a64b58cc.jpeg?crop=pad&pad_color=FFF&format=jpeg&trim=color&trimcolor=FFF&w=1200&h=1289"
+          },
+          {
+            "url": "https://n.nordstrommedia.com/id/sr2/201649ff-65e1-45b2-9ba3-b292a64b58cc.jpeg?crop=pad&pad_color=FFF&format=jpeg&trim=color&trimcolor=FFF&w=489&h=750"
+          },
+          {
+            "url": "https://n.nordstrommedia.com/id/sr2/201649ff-65e1-45b2-9ba3-b292a64b58cc.jpeg?crop=pad&pad_color=FFF&format=jpeg&trim=color&trimcolor=FFF&w=1318&h=1416"
+          },
+          {
+            "url": "https://n.nordstrommedia.com/id/sr2/201649ff-65e1-45b2-9ba3-b292a64b58cc.jpeg?crop=pad&pad_color=FFF&format=jpeg&trim=color&trimcolor=FFF&w=587&h=900"
+          },
+          {
+            "url": "https://n.nordstrommedia.com/id/sr2/201649ff-65e1-45b2-9ba3-b292a64b58cc.jpeg?crop=pad&pad_color=FFF&format=jpeg&trim=color&trimcolor=FFF&w=489&h=525"
+          }
+        ],
+        "pageTitle": "Gucci <b>Supermini GG Marmont</b> 2.0 Matelassé Leather Shoulder Bag ...",
+        "url": "http://www.prospafinancial.com.au/held/nordstrom.php?s/gucci-supermini-gg-marmont-2-0-matelasse-leather-shoulder-bag/4643234?origin=category-personalizedsort&breadcrumb=Home%2FWomen%2FHandbags%2FAll%20Handbags&color=porcelain%20rose"
+      },
+      {
+        "pageTitle": "Lyst - Gucci <b>Super Mini Gg Marmont</b> 2.0 Leather Bag",
+        "partialMatchingImages": [
+          {
+            "url": "https://cdnc.lystit.com/200/250/tr/photos/farfetch/a24fc917/gucci-Neutrals-GG-Marmont-Matelasse-Leather-Super-Mini-Bag.jpeg"
+          }
+        ],
+        "url": "https://www.lyst.com/bags/gucci-super-mini-gg-marmont-20-leather-bag-2/"
+      },
+      {
+        "pageTitle": "<b>Gucci Marmont</b> Gg Matelassé Quilted Leather <b>Super Mini</b> Antique ...",
+        "partialMatchingImages": [
+          {
+            "url": "https://img-static.tradesy.com/item/25139441/gucci-marmont-gg-matelasse-quilted-leather-super-mini-taupe-cross-body-bag-0-2-960-960.jpg"
+          }
+        ],
+        "url": "https://www.tradesy.com/i/gucci-marmont-gg-matelasse-quilted-leather-super-mini-antique-rose-cross-body-bag/25139441/"
+      },
+      {
+        "pageTitle": "Gucci <b>Supermini Gg Marmont</b> 20 Matelasse Leather Shoulder Bag ...",
+        "partialMatchingImages": [
+          {
+            "url": "https://cdn.lookastic.com/pink-quilted-leather-crossbody-bag/supermini-gg-marmont-20-matelasse-leather-shoulder-bag-original-8869433.jpg"
+          }
+        ],
+        "url": "https://lookastic.com/women/pink-quilted-leather-crossbody-bag/shop/supermini-gg-marmont-20-matelasse-leather-shoulder-bag-8869433"
+      },
+      {
+        "pageTitle": "<b>Gucci</b> Handbags - ShopStyle",
+        "partialMatchingImages": [
+          {
+            "url": "https://img.shopstyle-cdn.com/pim/dc/f2/dcf2be8156f4ead5f337a7284c4818e9_xlarge.jpg"
+          },
+          {
+            "url": "https://img.shopstyle-cdn.com/sim/dc/f2/dcf2be8156f4ead5f337a7284c4818e9/Gucci-GG-Marmont-matelass%C3%A9-leather-super-mini-bag.jpg"
+          },
+          {
+            "url": "https://img.shopstyle-cdn.com/pim/a2/4f/a24fc91702c4e1b5a558c9281c5d5f99_xlarge.jpg"
+          }
+        ],
+        "url": "https://www.shopstyle.com/browse/handbags/gucci"
+      },
+      {
+        "pageTitle": "<b>Gucci Marmont Mini</b> - ShopStyle",
+        "partialMatchingImages": [
+          {
+            "url": "https://img.shopstyle-cdn.com/pim/a2/4f/a24fc91702c4e1b5a558c9281c5d5f99_xlarge.jpg"
+          }
+        ],
+        "url": "https://www.shopstyle.com/browse?fts=gucci+marmont+mini"
+      },
+      {
+        "pageTitle": "Huge Deal on <b>GG Marmont</b> Matelasse Leather <b>Super Mini</b> Bag ...",
+        "partialMatchingImages": [
+          {
+            "url": "https://images.prod.meredith.com/product/1657bf50b6744c346570918e3c44e635/1551567068447/l/gg-marmont-matelasse-leather-super-mini-bag-multicolor-gucci-shoulder-bags"
+          }
+        ],
+        "url": "http://www.mywedding.com/shop/gucci-gg-marmont-matelasse-leather-super-mini-bag-multicolor-gucci-shoulder-bags-p1657bf50b6744c346570918e3c44e635.html"
+      },
+      {
+        "pageTitle": "New Savings on <b>GG Marmont</b> Matelasse Leather <b>Super Mini</b> Bag ...",
+        "partialMatchingImages": [
+          {
+            "url": "https://images.prod.meredith.com/product/c03dd0743924e30d06657b3f9b1a6183/1555539037249/m/gg-marmont-matelasse-leather-super-mini-bag-multicolor-gucci-shoulder-bags"
+          }
+        ],
+        "url": "https://www.parenting.com/shop/gucci-gg-marmont-matelasse-leather-super-mini-bag-red-gucci-shoulder-bags-p090026ea2c1f32a763039fb0c22c68ac.html"
+      },
+      {
+        "pageTitle": "Gucci <b>GG Marmont</b> matelassé leather <b>super mini</b> bag - Neutrals",
+        "partialMatchingImages": [
+          {
+            "url": "https://images.prod.meredith.com/product/34e0dbc7377f0aef35b81c8b4188a765/1549842562794/l/gucci-gg-marmont-matelass-leather-super-mini-bag-neutrals"
+          }
+        ],
+        "url": "https://www.shape.com/shop/gucci-gucci-gg-marmont-matelass-leather-super-mini-bag-neutrals-p34e0dbc7377f0aef35b81c8b4188a765.html"
+      },
+      {
+        "pageTitle": "<b>Gucci</b> Women&#39;s Fashion - ShopStyle",
+        "partialMatchingImages": [
+          {
+            "url": "https://img.shopstyle-cdn.com/pim/dc/f2/dcf2be8156f4ead5f337a7284c4818e9_xlarge.jpg"
+          },
+          {
+            "url": "https://img.shopstyle-cdn.com/sim/dc/f2/dcf2be8156f4ead5f337a7284c4818e9/Gucci-GG-Marmont-matelass%C3%A9-leather-super-mini-bag.jpg"
+          }
+        ],
+        "url": "https://www.shopstyle.com/browse/women/gucci"
+      },
+      {
+        "fullMatchingImages": [
+          {
+            "url": "https://www.gghandbags.co.uk/wp-content/uploads/2018/12/top-quality-Gucci-GG-Marmont-matelass%C3%A9-leather-super-mini-bag-in-Dusty-pink-matelass%C3%A9-chevron-leather-476433-DSVRT-5729.jpg"
+          }
+        ],
+        "pageTitle": "top quality Gucci <b>GG Marmont</b> matelassé leather <b>super mini</b> bag in ...",
+        "url": "https://www.gghandbags.co.uk/product/top-quality-gucci-gg-marmont-matelasse-leather-super-mini-bag-in-dusty-pink-matelasse-chevron-leather/"
+      },
+      {
+        "pageTitle": "Get the Deal: Gucci <b>GG Marmont</b> matelassé leather <b>super mini</b> bag ...",
+        "partialMatchingImages": [
+          {
+            "url": "https://images.prod.meredith.com/product/68e4cbe104934e8ba10325fff1642ebb/1533433785126/l/gucci-gg-marmont-matelass-leather-super-mini-bag-nude-and-neutrals"
+          }
+        ],
+        "url": "https://www.shape.com/shop/gucci-gucci-gg-marmont-matelass-leather-super-mini-bag-neutrals-p68e4cbe104934e8ba10325fff1642ebb.html"
+      },
+      {
+        "pageTitle": "Savings on <b>GG Marmont Super Mini</b> shoulder bag - Parenting",
+        "partialMatchingImages": [
+          {
+            "url": "https://images.prod.meredith.com/product/c03dd0743924e30d06657b3f9b1a6183/1555539037249/m/gg-marmont-matelasse-leather-super-mini-bag-multicolor-gucci-shoulder-bags"
+          }
+        ],
+        "url": "https://www.parenting.com/shop/gucci-gg-marmont-super-mini-shoulder-bag-pc44dc9bdd028080be3fe70a6e05d6130.html"
+      },
+      {
+        "pageTitle": "Lyst - <b>Gucci Super Mini Marmont</b> Matelassé Bag in Red",
+        "partialMatchingImages": [
+          {
+            "url": "https://cdnc.lystit.com/200/250/tr/photos/farfetch/a24fc917/gucci-Neutrals-GG-Marmont-Matelasse-Leather-Super-Mini-Bag.jpeg"
+          }
+        ],
+        "url": "https://www.lyst.com/bags/gucci-super-mini-marmont-matelasse-bag/"
+      },
+      {
+        "pageTitle": "Lyst - Gucci <b>GG Marmont Super Mini</b> Shoulder Bag in Black",
+        "partialMatchingImages": [
+          {
+            "url": "https://cdnc.lystit.com/200/250/tr/photos/farfetch/a24fc917/gucci-Neutrals-GG-Marmont-Matelasse-Leather-Super-Mini-Bag.jpeg"
+          }
+        ],
+        "url": "https://www.lyst.com/bags/gucci-gg-marmont-super-mini-shoulder-bag-4/"
+      },
+      {
+        "pageTitle": "Gucci <b>GG Marmont</b> matelassé leather <b>super</b>... - MyWedding",
+        "partialMatchingImages": [
+          {
+            "url": "https://images.prod.meredith.com/product/68e4cbe104934e8ba10325fff1642ebb/1533433785126/l/gucci-gg-marmont-matelass-leather-super-mini-bag-nude-and-neutrals"
+          }
+        ],
+        "url": "http://www.mywedding.com/shop/gucci-gucci-gg-marmont-matelass-leather-super-mini-bag-neutrals-p68e4cbe104934e8ba10325fff1642ebb.html"
+      },
+      {
+        "pageTitle": "<b>Gucci Marmont Mini</b> Bag Canada | MIT Hillel",
+        "partialMatchingImages": [
+          {
+            "url": "https://media.gucci.com/style/DarkGray_Center_0_0_2400x2400/1490623208/476433_DSVRT_5729_001_090_0000_Light-GG-Marmont-matelass-leather-super-mini-bag.jpg"
+          }
+        ],
+        "url": "http://hillel.mit.edu/gucci-marmont-mini-bag-canada/"
+      },
+      {
+        "pageTitle": "#jualguccisupermini hashtag on Instagram - Insta Stalker",
+        "partialMatchingImages": [
+          {
+            "url": "https://scontent-amt2-1.cdninstagram.com/vp/9680eb65fd7fd3744e336efda711dcaf/5D23EE52/t51.2885-15/sh0.08/e35/s640x640/40125543_169281583971846_7718514856665209257_n.jpg?_nc_ht=scontent-amt2-1.cdninstagram.com"
+          },
+          {
+            "url": "https://scontent-amt2-1.cdninstagram.com/vp/330c0fcf1dda8364a7dbe9bae427479b/5CE9E415/t51.2885-15/sh0.08/e35/s640x640/38159016_673941399630172_6846621355262083072_n.jpg?_nc_ht=scontent-amt2-1.cdninstagram.com"
+          }
+        ],
+        "url": "https://insta-stalker.com/tag/jualguccisupermini/"
+      },
+      {
+        "pageTitle": "<b>Gucci Marmont</b> Matelasse Camera Bag Review | The Art of Mike ...",
+        "partialMatchingImages": [
+          {
+            "url": "https://item2.tradesy.com/images/gucci-marmont-gg-matelasse-mini-chain-camera-rose-antique-leather-cross-body-bag-24053791-0-1.jpg?width=440&height=440"
+          }
+        ],
+        "url": "https://www.artofmikemignola.com/gucci-marmont-matelasse-camera-bag-review/"
+      },
+      {
+        "pageTitle": "<b>Gucci Marmont Mini</b> | MIT Hillel",
+        "partialMatchingImages": [
+          {
+            "url": "https://media.gucci.com/style/DarkGray_Center_0_0_2400x2400/1490623208/476433_DSVRT_5729_001_090_0000_Light-GG-Marmont-matelass-leather-super-mini-bag.jpg"
+          }
+        ],
+        "url": "http://hillel.mit.edu/gucci-marmont-mini/"
+      },
+      {
+        "pageTitle": "Get the Deal: Gucci <b>GG Marmont</b> matelassé leather <b>super mini</b> bag ...",
+        "partialMatchingImages": [
+          {
+            "url": "https://images.prod.meredith.com/product/34e0dbc7377f0aef35b81c8b4188a765/1549842562794/l/gucci-gg-marmont-matelass-leather-super-mini-bag-neutrals"
+          }
+        ],
+        "url": "https://www.more.com/shop/gucci-gucci-gg-marmont-matelass-leather-super-mini-bag-neutrals-p34e0dbc7377f0aef35b81c8b4188a765.html"
+      }
+    ],
+    "partialMatchingImages": [
+      {
+        "url": "https://cdnd.lystit.com/photos/nordstrom/6e1364be/gucci-Porcelain-Rose-Supermini-Gg-Marmont-20-Matelasse-Leather-Shoulder-Bag.jpeg"
+      },
+      {
+        "url": "http://www.7starleatherhandbags.com/images//product_6/gucci-gg-marmont-matelass-leather-super-mini-bag-2763.jpg"
+      },
+      {
+        "url": "https://media.gucci.com/style/DarkGray_Center_0_0_2400x2400/1490623208/476433_DSVRT_5729_001_090_0000_Light-GG-Marmont-matelass-leather-super-mini-bag.jpg"
+      },
+      {
+        "url": "https://cdna.lystit.com/photos/gucci/c32476ae/gucci-Beige-GG-Marmont-Matelasse-Leather-Super-Mini-Bag.jpeg"
+      },
+      {
+        "url": "https://n.nordstrommedia.com/id/sr2/201649ff-65e1-45b2-9ba3-b292a64b58cc.jpeg?crop=pad&pad_color=FFF&format=jpeg&trim=color&trimcolor=FFF&w=1318&h=1416"
+      },
+      {
+        "url": "http://denim.ng/wp-content/uploads/2018/08/undefined-266339-1535393581000-product.1200x1365uc.jpg"
+      },
+      {
+        "url": "https://i0.wp.com/bintroo.com/wp-content/uploads/2018/08/1535433293_210_the-fall-2018-bag-trends-with-the-most-staying-power.jpg?w=1170"
+      },
+      {
+        "url": "https://nouwcdn.com/14/1425000/1430000/1420190/pics/201806191535573811_sbig.jpg"
+      },
+      {
+        "url": "https://guccious.com/images/pic/476433DSVRT5729_2.jpg"
+      },
+      {
+        "url": "https://crawler-cache-jellolabs-com.imgix.net/nxwCyGmJ_SvqfGJa/source_photo.jpg?auto=compress,format"
+      },
+      {
+        "url": "https://media.gucci.com/style/DarkGray_Center_0_0_1200x1200/1527604944/476433_DSVRT_5729_001_057_0000_Light-GG-Marmont-matelass-leather-super-mini-bag.jpg"
+      },
+      {
+        "url": "https://assets.marthastewartweddings.com/styles/wmax-520-highdpi/d39/bronze-anniversary-gifts-bag-gucci-0418/bronze-anniversary-gifts-bag-gucci-0418_vert.jpg?itok=K4wGGSUN"
+      },
+      {
+        "url": "http://5b0988e595225.cdn.sohucs.com/images/20190224/eabf3a66949944e0b7bc9a06ff06be63.jpeg"
+      },
+      {
+        "url": "https://shanzzzz.files.wordpress.com/2018/02/x7urjntlit6uwlbtd9s8.jpg?w=1100"
+      },
+      {
+        "url": "https://media.karousell.com/media/photos/products/2017/07/16/gucci_marmont_supermini_1500190068_795086f40"
+      },
+      {
+        "url": "http://files.lpzine.com/image/4478a9bfc3a1f836be104836821bdb6272bdc92cd3fe5c17bf4a28300771fc0f/79809773/701507595996753919.jpg"
+      },
+      {
+        "url": "https://images-na.ssl-images-amazon.com/images/I/61YuuSBMVHL._UL1010_.jpg"
+      },
+      {
+        "url": "https://static-buyma-com.akamaized.net/imgdata/item/181103/0039436942/167909504/org.jpg"
+      },
+      {
+        "url": "https://img-static.tradesy.com/item/24983928/gucci-marmont-gg-matelasse-quilted-leather-super-mini-taupe-cross-body-bag-0-0-960-960.jpg"
+      },
+      {
+        "url": "https://img-static.tradesy.com/item/24268537/gucci-marmont-matelasse-2018-chain-nude-pink-leather-cross-body-bag-0-0-960-960.jpg"
+      },
+      {
+        "url": "https://img-static.tradesy.com/item/25139441/gucci-marmont-gg-matelasse-quilted-leather-super-mini-taupe-cross-body-bag-0-2-960-960.jpg"
+      },
+      {
+        "url": "https://cdnb.lystit.com/1200/630/tr/photos/gucci/9e2cd5f1/gucci-Pink-Gg-Marmont-Matelasse-Leather-Super-Mini-Bag.jpeg"
+      },
+      {
+        "url": "https://cdnb.lystit.com/1200/630/tr/photos/nordstrom/6e1364be/gucci-Porcelain-Rose-Supermini-Gg-Marmont-20-Matelasse-Leather-Shoulder-Bag.jpeg"
+      },
+      {
+        "url": "https://cdna.lystit.com/1200/630/tr/photos/farfetch/12301549-NUDENEUTRALS-4f912d7f-.jpeg"
+      },
+      {
+        "url": "http://pic1.ymatou.com/G02/shangou/M06/3C/02/CgzUDFyQ_CSAOsoWAAD4R6cppPc940_25_29_n_w_o.jpg"
+      },
+      {
+        "url": "http://pic1.ymatou.com/G02/shangou/M03/6B/FE/CgvUBVomTaCAeckGAAFAhp5WLCU737_50_51_n_w_o.jpg"
+      },
+      {
+        "url": "https://media.gucci.com/style/DarkGray_Center_0_0_800x800/1490623208/476433_DSVRT_5729_001_090_0000_Light-GG-Marmont-matelass-leather-super-mini-bag.jpg"
+      },
+      {
+        "url": "https://imgservice.suning.cn/uimg1/b2c/image/f-ecoeMhDF4KhToR7VOEQA.jpg"
+      },
+      {
+        "url": "https://img.diytrade.com/smimg/2595971/48610410-10645942-1/Gucci_GG_Marmont_leather_super_mini_bag_/1673.jpg"
+      },
+      {
+        "url": "https://img14.360buyimg.com/imgzone/jfs/t27979/219/715621830/417639/beaa8808/5bfb9f6bN5bbcfa36.png"
+      },
+      {
+        "url": "https://media.gucci.com/style/DarkGray_Center_0_0_800x800/1527604944/476433_DSVRT_5729_001_057_0000_Light-GG-Marmont-matelass-leather-super-mini-bag.jpg"
+      },
+      {
+        "url": "https://cdnb.lystit.com/photos/gucci/6af1a650/gucci-Nude-Gg-Marmont-Matelasse-Leather-Super-Mini-Bag.jpeg"
+      },
+      {
+        "url": "https://img.diytrade.com/smimg/2595971/48610410-10645942-5/Gucci_GG_Marmont_leather_super_mini_bag_/1673.jpg"
+      },
+      {
+        "url": "https://i.ebayimg.com/images/i/223438099888-0-1/s-l1000.jpg"
+      },
+      {
+        "url": "https://image.suning.cn/uimg/sop/commodity/167161048615539272559689_x.jpg"
+      },
+      {
+        "url": "https://static-buyma-com.akamaized.net/imgdata/item/171124/0032801712/186445155/org.jpg"
+      },
+      {
+        "url": "http://5b0988e595225.cdn.sohucs.com/images/20190408/57485963d60b40ddac56517fe81356f8.jpeg"
+      },
+      {
+        "url": "https://ct.yimg.com/xd/api/res/1.2/PucS5zVb.w5lV583JGK1HQ--/YXBwaWQ9eXR3YXVjdGlvbnNlcnZpY2U7aD04MDA7cT04NTtyb3RhdGU9YXV0bzt3PTgwMA--/https://s.yimg.com/ob/image/5184074b-fb54-4c2f-94e6-0b11eefa8b61.jpg"
+      },
+      {
+        "url": "https://cf.shopee.tw/file/0e43b73982f7996516748fc08ce9db2c"
+      },
+      {
+        "url": "https://cf.shopee.tw/file/56b621ab45cf648b1eb34c4fef91fdd7"
+      },
+      {
+        "url": "https://s-media-cache-ak0.pinimg.com/originals/32/54/b1/3254b170125c0e771c78e0141c4cbf54.jpg"
+      },
+      {
+        "url": "https://image.suning.cn/uimg/sop/commodity/130080791120013854878301_x.jpg"
+      },
+      {
+        "url": "https://media.gucci.com/style/DarkGray_Center_0_0_800x800/1527604944/476433_DSVRT_5729_001_057_0000_Light-GG.jpg"
+      },
+      {
+        "url": "https://img10.360buyimg.com/imgzone/jfs/t30130/53/146327268/63532/908fbc0a/5be932edN6ccb7c9a.jpg"
+      },
+      {
+        "url": "http://forums.huaren.us/attachment.aspx?attachmentid=4683663"
+      },
+      {
+        "url": "https://imgservice.suning.cn/uimg1/b2c/image/f-ecoeMhDF4KhToR7VOEQA.jpg_800w_800h_4e"
+      },
+      {
+        "url": "http://g.search.alicdn.com/img/bao/uploaded/i4/i4/2200668542679/O1CN01ZTVLan1Vf1YimnPmM_!!2200668542679.jpg"
+      },
+      {
+        "url": "https://ct.yimg.com/xd/api/res/1.2/aLuTz2a1yK2.eDs0VbuWUg--/YXBwaWQ9eXR3YXVjdGlvbnNlcnZpY2U7aD04MDA7cT04NTtyb3RhdGU9YXV0bzt3PTgwMA--/https://s.yimg.com/ob/image/e2680106-e4e5-40db-bea4-46b5abda508c.jpg"
+      },
+      {
+        "url": "https://thegirlinbed.nl/wp-content/uploads/2018/07/Designer-Wishlist-2-1024x576.jpg"
+      },
+      {
+        "url": "https://img30.360buyimg.com/popWaterMark/jfs/t16567/295/1074985023/72533/cedd53ae/5a4b2af8N7014a9f7.jpg"
+      }
+    ],
+    "visuallySimilarImages": [
+      {
+        "url": "https://nudevotion.storage.googleapis.com/media/cache/2/l/gucci-supermini-gg-marmont-20-matelasse-leather-shoulder-bag-2-l.jpg"
+      },
+      {
+        "url": "https://dj7u9rvtp3yka.cloudfront.net/products/PIM-1518084526698-92c4c76a-e698-40b8-a5b9-b9d85f532623_v1-small.jpg"
+      },
+      {
+        "url": "https://product-images.therealreal.com/GUC162937_1_enlarged.jpg"
+      },
+      {
+        "url": "https://m.levelshoes.com/catalog/product/4/7/476433dsvrt5729_1.jpg"
+      },
+      {
+        "url": "https://luxrack.com/images/items/_103119182.jpg"
+      },
+      {
+        "url": "https://i.pinimg.com/736x/c6/03/60/c603609e88f026c212dc0d6dfd490901.jpg"
+      },
+      {
+        "url": "https://media.gucci.com/style/DarkGray_Center_0_0_2400x2400/1490623209/476433_DSVRT_5729_003_090_0000_Light-GG-Marmont-matelass-leather-super-mini-bag.jpg"
+      },
+      {
+        "url": "https://images.prod.meredith.com/product/a268387db29369861677d48dd594e72c/1549243369211/l/gg-marmont-matelasse-leather-super-mini-bag"
+      },
+      {
+        "url": "https://n.nordstrommedia.com/id/f9b74c0b-74e1-4892-8870-d1154b8dc9e6.jpeg?crop=pad&pad_color=FFF&format=jpeg&trim=color&trimcolor=FFF&w=780&h=838"
+      },
+      {
+        "url": "https://www.fashionphile.com/images/product-images/large/5b857d06e83f07456790549ac9dd4371/9815deafd70cc4486abe6a02cdd85c33.jpg"
+      },
+      {
+        "url": "https://nudevotion.storage.googleapis.com/media/images/medium/gucci-leather-marmont-chain-shoulder-bag.jpg"
+      },
+      {
+        "url": "http://www.lufashion.fr/wp-content/uploads/2017/12/gucci-gg-marmont-femme-mini-sac-gg-marmont-matelassc3a9-mini-sacs-cuir-nude.jpg"
+      }
+    ],
+    "webEntities": [
+      {
+        "description": "Gucci Women's Supermini Gg Marmont 2.0 Matelassé Leather Shoulder Bag",
+        "entityId": "/g/11g04sqqk2",
+        "score": 0.94875
+      },
+      {
+        "description": "Gucci Gg Marmont",
+        "entityId": "/g/11h0cqpr86",
+        "score": 0.7175
+      },
+      {
+        "description": "Bag",
+        "entityId": "/m/0n5v01m",
+        "score": 0.6892
+      },
+      {
+        "description": "Gucci",
+        "entityId": "/m/03gc5x",
+        "score": 0.6884
+      },
+      {
+        "entityId": "/m/0rzs4kg",
+        "score": 0.6884
+      },
+      {
+        "description": "Gucci Women's GG Marmont Mini Chain Bag",
+        "entityId": "/g/11f5h_nt9f",
+        "score": 0.68728006
+      },
+      {
+        "description": "Handbag",
+        "entityId": "/m/080hkjn",
+        "score": 0.6128
+      },
+      {
+        "description": "Shoulder Bag",
+        "entityId": "/g/11gl4sqxlp",
+        "score": 0.588
+      },
+      {
+        "description": "Gucci Gg Marmont Super Mini shoulder bag Women",
+        "entityId": "/g/11ffk8hf27",
+        "score": 0.53745997
+      },
+      {
+        "description": "Leather",
+        "entityId": "/m/04lbp",
+        "score": 0.536
+      },
+      {
+        "description": "Messenger Bags",
+        "entityId": "/m/078bm7",
+        "score": 0.493
+      },
+      {
+        "description": "Calfskin",
+        "entityId": "/m/0661qt_",
+        "score": 0.4774
+      },
+      {
+        "description": "Gucci black GG Marmont matelassé mini bag women",
+        "entityId": "/g/11h63q9bg3",
+        "score": 0.47520003
+      },
+      {
+        "description": "Clothing Accessories",
+        "entityId": "/m/0463sg",
+        "score": 0.3829
+      },
+      {
+        "description": "Gucci Marmont",
+        "entityId": "/g/11f5csx_4b",
+        "score": 0.0011624
+      }
+    ]
+  }
+}
