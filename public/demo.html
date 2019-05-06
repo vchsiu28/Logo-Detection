@@ -83,33 +83,32 @@
                 <!-- Image and results-->
                 <div class="panel">
                     <div
-                        class="row-padding"
-                        style="margin:0 450px;margin-top:20px"
+                        class="row-padding center"
+                        style="margin-top:20px;"
                     >
-                        <div style="width: 450px; height: 450px;">
+                        <div class="div-center" style="width: 450px; height: 450px;">
                             <img
                                 id="output"
                                 src="upload/default-image.png"
                                 style="width: inherit; height: inherit"
                             />
+                            <input
+                                type="file"
+                                id="image"
+                                name="image"
+                                size="20"
+                                onchange="openFile(event)"
+                            />
+                            <button id="upload-button" style="margin-top:20px;">
+                                Upload
+                            </button>
+                            <p style="text-align: center" id="result">hello</p>
+                            <p style="text-align: center" id="web-result">
+                                Click <a href="" id="web-link">here</a> to find out
+                                relevant websites.
+                            </p>
+                            <ul id="user-history"></ul>
                         </div>
-
-                        <input
-                            type="file"
-                            id="image"
-                            name="image"
-                            size="20"
-                            onchange="openFile(event)"
-                        />
-                        <button id="upload-button" style="margin-top:20px">
-                            Upload
-                        </button>
-                        <p style="text-align: center" id="result">hello</p>
-                        <p style="text-align: center" id="web-result">
-                            Click <a href="" id="web-link">here</a> to find out
-                            relevant websites.
-                        </p>
-                        <ul id="user-history"></ul>
                     </div>
                 </div>
             </div>

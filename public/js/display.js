@@ -11,9 +11,7 @@ var openFile = function(event) {
 
       } else {
         output.style ="float:right;height:100%;width=450";
-
       }
-
     };
     reader.readAsDataURL(input.files[0]);
   };

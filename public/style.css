@@ -1605,3 +1605,6 @@ a {
 #web-result {
     display: none;
 }
+.div-center {
+    margin: auto;
+}
