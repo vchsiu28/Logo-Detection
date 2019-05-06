@@ -1,11 +1,11 @@
-var imageResponse = '';
+var imageResponse = { label: [''], logo: [''], web: [''] };
 var postImageUrl = 'http://localhost:8888/predict/image';
 var getHistUrl = 'http://localhost:8888/history/user/';
 var postHistUrl = 'http://localhost:8888/history/user';
 
 const loadResponse = () => {
-    document.getElementById('result-json').innerHTML = 'Fetching results...';
-    document.getElementById('result-json').textContent = imageResponse;
+    document.getElementById('result').innerHTML = 'Fetching results...';
+    document.getElementById('result').textContent = imageResponse.label[0];
 };
 
 const addUserHist = history => {
@@ -24,16 +24,16 @@ const addUserHist = history => {
 
 const loadUserHist = userId => {
     getUserHist(userId)
-    .then(histories => {
-        histories.forEach(history => {
-            addUserHist(history);
+        .then(histories => {
+            histories.forEach(history => {
+                addUserHist(history);
+            });
+        })
+        .catch(err => {
+            // IMPORTANT!!! For debug only
+            imageResponse = err.message;
+            loadResponse();
         });
-    })
-    .catch(err => {
-        // IMPORTANT!!! For debug only
-        imageResponse = err.message;
-        loadResponse();
-    });
 };
 
 /* return is a Promise object which will be resolved to json response of the 
@@ -119,32 +119,15 @@ displayed below the button once resolved.
 const loadButton = () => {
     const reader = new FileReader();
     document.getElementById('upload-button').addEventListener('click', () => {
-        document.getElementById('result-json').innerHTML='Wait a minute...';
+        document.getElementById('result').innerHTML = 'Wait a minute...';
         const image = document.getElementById('image').files[0];
         reader.onload = event => {
             const imageByte = event.target.result.split(',')[1];
             getImageResponse(imageByte)
                 .then(searchResult => {
-                    imageResponse = JSON.stringify(searchResult);
+                    imageResponse = searchResult;
                     loadResponse();
-
-
-
-
-                    // parse json    
-                    json = imageResponse;
-                    object = json.labelAnnotations[0].description;
-                    logo = json.logoAnnotations[0].description;
-                    web = json.webDetection[0].fullMatchingImages;
-
-                    
-
                     return Promise.resolve(searchResult);
-                })
-                .catch(err => {
-                    // IMPORTANT!!! For debug only
-                    imageResponse = err.message;
-                    loadResponse();
                 })
                 .then(searchResult => {
                     return postUserHist('Dummy', searchResult);
