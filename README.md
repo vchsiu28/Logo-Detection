@@ -11,15 +11,19 @@ You find a nice handbag and wonder what its brand is. This web app is here for y
 4. Make sure [run.sh](../blob/master/run.sh) is executable by `chmod +x run.sh` and then use `./run.sh` to start the web app.
 5. The web page is statically hosted on <http://localhost:8888/demo.html> by default.
 
-
+![default](https://github.com/vchsiu28/Logo-Detection/img/default.png)
 Click "Choose File" and choose the image file from your browser. Click "Upload", wait for 2-3 seconds and results will be updated underneath the image.
 
+![object](https://github.com/vchsiu28/Logo-Detection/img/object.png)
 If you want to check what it is, click on "Object" button.
 
+![logo](https://github.com/vchsiu28/Logo-Detection/img/logo.png)
 Click on "Logo" button to see its logo/brand name.
 
+![web](https://github.com/vchsiu28/Logo-Detection/img/web.png)
 "Web" button searches for websites associated with the uploaded image. 
 
+![alt text](https://github.com/vchsiu28/Logo-Detection/img/default.png)
 Links are potential e-commerce sites where you can find/purchase the item.   
 
 Fetch response are stored in our user history database for user analytics. 
