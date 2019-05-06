@@ -119,7 +119,7 @@ displayed below the button once resolved.
 const loadButton = () => {
     const reader = new FileReader();
     document.getElementById('upload-button').addEventListener('click', () => {
-        document.getElementById('result').innerHTML = 'Wait a minute...';
+        document.getElementById('result').textContent = 'Wait a moment...';
         const image = document.getElementById('image').files[0];
         reader.onload = event => {
             const imageByte = event.target.result.split(',')[1];

@@ -34,7 +34,9 @@ document.getElementById('web-button').addEventListener('click', () => {
         linkNode.textContent = 'Sorry, we cannot find relevant websites.';
 	}
 	const webNode = document.getElementById('web-result');
-	webNode.style.display = 'block';
+	if (linkNode.href !== window.location.href) {
+		webNode.style.display = 'block';
+	}
 	const resultNode = document.getElementById('result');
 	resultNode.style.display = 'none';
 });
