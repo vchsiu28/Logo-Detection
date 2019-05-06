@@ -28,7 +28,6 @@ document.getElementById('web-button').addEventListener('click', () => {
     const web = imageResponse.web;
     const linkNode = document.getElementById('web-link');
     if (web.length > 0) {
-		console.log(imageResponse.web[0]);
         linkNode.href = imageResponse.web[0];
     } else {
         linkNode.textContent = 'Sorry, we cannot find relevant websites.';
