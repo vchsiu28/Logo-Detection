@@ -5,12 +5,20 @@ var postHistUrl = 'http://localhost:8888/history/user';
 
 const loadResponse = () => {
     document.getElementById('result').innerHTML = 'Fetching results...';
-    // return top 5 objects
-    if (imageResponse.label.length<6){
-        document.getElementById('result').textContent = imageResponse.label;
-    }else{
-        document.getElementById('result').textContent = imageResponse.label.slice(0,5);
+    if (imageResponse.logo.length==0){
+        document.getElementById('result').textContent='Sorry, we cannot identify the logo.'
     }
+    else{
+        document.getElementById('result').textContent = imageResponse.logo;
+    }
+
+    // return top 5 objects
+    // if (imageResponse.label.length<6){
+    //     document.getElementById('result').textContent = imageResponse.label;
+    // }else{
+    //     document.getElementById('result').textContent = imageResponse.label.slice(0,5);
+    // }
+   
 };
 
 const addUserHist = history => {
