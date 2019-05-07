@@ -11,7 +11,7 @@ You find a nice handbag and wonder what its brand is. This web app is here for y
 4. Make sure [run.sh](../blob/master/run.sh) is executable by `chmod +x run.sh` and then use `./run.sh` to start the web app.
 5. The web page is statically hosted on <http://localhost:8888/demo.html> by default.
 
-![default](https://github.com/vchsiu28/Logo-Detection/blob/master/img/default.png)
+![default](https://github.com/vchsiu28/Logo-Detection/blob/master/img/default2.png)
 Click "Choose File" and choose the image file from your browser. Click "Upload", wait for 2-3 seconds and results will be updated underneath the image.
 
 ![object](https://github.com/vchsiu28/Logo-Detection/blob/master/img/object.png)
