@@ -5,7 +5,12 @@ var postHistUrl = 'http://localhost:8888/history/user';
 
 const loadResponse = () => {
     document.getElementById('result').innerHTML = 'Fetching results...';
-    document.getElementById('result').textContent = imageResponse.label[0];
+    // return top 5 objects
+    if (imageResponse.label.length<6){
+        document.getElementById('result').textContent = imageResponse.label;
+    }else{
+        document.getElementById('result').textContent = imageResponse.label.slice(0,5);
+    }
 };
 
 const addUserHist = history => {
