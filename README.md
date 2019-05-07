@@ -12,13 +12,16 @@ You find a nice handbag and wonder what its brand is. This web app is here for y
 5. The web page is statically hosted on <http://localhost:8888/demo.html> by default.
 
 ![default](https://github.com/vchsiu28/Logo-Detection/blob/master/img/default2.png)
-Click "Choose File" and choose the image file from your browser. Click "Upload", wait for 2-3 seconds and results will be updated underneath the image.
+Click "Choose File" and choose the image file from your browser. Click "Upload", wait for 2-3 seconds and results will be updated underneath the image. The default result is the logo of the image. 
 
-![object](https://github.com/vchsiu28/Logo-Detection/blob/master/img/object.png)
-If you want to check what it is, click on "Object" button.
+![object](https://github.com/vchsiu28/Logo-Detection/blob/master/img/logo2.png)
+The default result is the logo of the image. 
 
-![logo](https://github.com/vchsiu28/Logo-Detection/blob/master/img/logo.png)
-Click on "Logo" button to see its logo/brand name.
+![logo](https://github.com/vchsiu28/Logo-Detection/blob/master/img/more_options.png)
+If you want to learn more about the image, click on "More Options" button.
+
+![logo](https://github.com/vchsiu28/Logo-Detection/blob/master/img/object2.png)
+Click on "Object" button to see what object it is.
 
 ![web](https://github.com/vchsiu28/Logo-Detection/blob/master/img/web.png)
 "Web" button searches for websites associated with the uploaded image. 
