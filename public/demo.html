@@ -15,31 +15,30 @@
             href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
         />
         <style>
-            html,
-            body,
-            h1,
-            h2,
-            h3,
-            h4,
-            h5 {
+            html, body, h1, h2, h3, h4, h5 {
                 font-family: 'Raleway', sans-serif;
             }
         </style>
     </head>
+
+
     <body class="light-grey">
-        <!-- Top container -->
-        <div class="bar top black large" style="z-index:4">
-            <button
-                class="bar-item button hide-large hover-none hover-text-light-grey"
-                onclick="w3_open();"
-            >
-                <i class="fa fa-bars"></i> Menu
-            </button>
+        <!-- Top container --> 
+        <div id="header" class="bar top black large" style="z-index:4">
+            <span class="bar-item left" onclick="toggleMenu()">More Options</span>
             <span class="bar-item right">Logo Detection</span>
         </div>
 
+        <!-- Menu with property buttons -->
+        <div id="menu" class="sidenav" style="display: none;">
+            <button class="menuButton" id="object-button">Objects</button> <br>
+            <button class="menuButton" id="logo-button">Logo</button> <br>
+            <button class="menuButton" id="web-button">Web </button>
+        </div>
+
+
         <!-- !PAGE  -->
-        <div class="main" style="margin-left:10px;margin-top:43px;">
+        <div id="main" class="main" style="margin-left:10px;margin-top:43px;">
             <!-- Header -->
             <header class="container" style="padding-top:22px">
                 <h5>
@@ -47,81 +46,68 @@
                 </h5>
             </header>
 
-            <!-- Property buttons -->
             <div class="row-padding margin-bottom">
                 <h5 style="margin-left:10px" id="message">
                     Upload your image to see what it is!
                 </h5>
             </div>
+
             <div class="row-padding margin-bottom">
-                <div class="third">
-                    <div class="container teal padding-small">
-                        <button class="button teal" id="object-button">
-                            Objects
-                        </button>
-
-                        <div class="clear"></div>
-                    </div>
-                </div>
-
-                <div class="third">
-                    <div class="container orange padding-small">
-                        <button class="button orange" id="logo-button">
-                            Logo
-                        </button>
-                        <div class="clear"></div>
-                    </div>
-                </div>
-
-                <div class="third">
-                    <div class="container red padding-small">
-                        <button class="button red" id="web-button">Web</button>
-                        <div class="clear"></div>
-                    </div>
-                </div>
-
                 <!-- Image and results-->
                 <div class="panel">
                     <div
-                        class="row-padding center"
-                        style="margin-top:20px;"
+                        class="row-padding"
+                        style="margin:0 450px;margin-top:20px"
                     >
-                        <div class="div-center" style="width: 450px; height: 450px;">
+                        <div align="center" style="width: 400px; height: 400px;" >
                             <img
                                 id="output"
                                 src="upload/default-image.png"
                                 style="width: inherit; height: inherit"
                             />
-                            <input
-                                type="file"
-                                id="image"
-                                name="image"
-                                size="20"
-                                onchange="openFile(event)"
-                            />
-                            <button id="upload-button" style="margin-top:20px;">
-                                Upload
-                            </button>
-                            <p style="text-align: center" id="result">hello</p>
-                            <p style="text-align: center" id="web-result">
-                                Click <a href="" id="web-link">here</a> to find out
-                                relevant websites.
-                            </p>
-                            <ul id="user-history"></ul>
                         </div>
+
+                        <input
+                            type="file"
+                            id="image"
+                            name="image"
+                            size="20"
+                            onchange="openFile(event)"
+                        />
+
+                        <button id="upload-button" style="margin-top:20px">
+                            Upload
+                        </button>
+
+                        <p style="text-align: center" id="result">hello</p>
+                        <p style="text-align: center" id="web-result">
+                            Click <a href="" id="web-link">here</a> to find out
+                            relevant websites.
+                        </p>
+
+                        <ul id="user-history"></ul>
                     </div>
                 </div>
             </div>
         </div>
-        <!-- <script>
-            var json ='';
-            var object = 'This shows object';
-            var logo = 'This shows logo';
-            var web = str.link('https://n.nordstrommedia.com/id/sr2/201649ff-65e1-45b2-9ba3-b292a64b58cc.jpeg?crop=pad&pad_color=FFF&format=jpeg&trim=color&trimcolor=FFF&w=1660&h=1783');
-            
-        </script> -->
+        
         <script src="js/main.js"></script>
         <script type="text/javascript" src="js/button.js"></script>
         <script type="text/javascript" src="js/display.js"></script>
+        <script type="text/javascript">
+            function toggleMenu() {
+              var x = document.getElementById("menu");
+              if (x.style.display === "none") {
+                x.style.display = "block";
+                document.getElementById("header").style.marginLeft = "250px";
+                document.getElementById("main").style.marginLeft = "250px";
+              } else {
+                x.style.display = "none";
+                document.getElementById("header").style.marginLeft = "0px";
+                document.getElementById("main").style.marginLeft = "0px";
+              }
+            }
+        </script>
     </body>
+
 </html>
