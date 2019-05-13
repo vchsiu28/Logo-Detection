@@ -6,8 +6,11 @@ const vision = require('@google-cloud/vision');
 const config = require('./config.json');
 const historyRoutes = require('./routes/history');
 const predictRoutes = require('./routes/predict');
+const authRoutes = require('./routes/auth');
 
 const app = express();
+
+app.locals.config = config;
 app.locals.googleClient = new vision.ImageAnnotatorClient();
 
 app.use(express.static('public'));
@@ -29,6 +32,7 @@ app.use((req, res, next) => {
 
 app.use('/history', historyRoutes);
 app.use('/predict', predictRoutes);
+app.use('/auth', authRoutes);
 
 mongoose
     .connect(config.dbUrl, { useNewUrlParser: true })
