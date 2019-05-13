@@ -13,9 +13,9 @@ const getInputs = wrapperId => {
 };
 
 const displayError = (wrapperId, err) => {
-    const selector = `#${wrapperId} p.error`;
+    const selector = `#${wrapperId} span.error`;
     const errorNode = document.querySelector(selector);
-    errorNode.textContent = err;
+    errorNode.textContent = `* ${err.message}`;
 };
 
 const postSignup = inputs => {
@@ -80,4 +80,35 @@ const signin = () => {
         .catch(err => {
             displayError('signin', err);
         });
+};
+
+const displaySignin = () => {
+    const signinContent = document.getElementById('signin');
+    const signinTab = document.getElementById('signin-tab');
+    const signupContent = document.getElementById('signup');
+    const signupTab = document.getElementById('signup-tab');
+    signinContent.style.display = 'initial';
+    signinTab.classList.add('active');
+    signupContent.style.display = 'none';
+    signupTab.classList.remove('active');
+    document.title = 'Sign In';
+};
+
+const displaySignup = () => {
+    const signinContent = document.getElementById('signin');
+    const signinTab = document.getElementById('signin-tab');
+    const signupContent = document.getElementById('signup');
+    const signupTab = document.getElementById('signup-tab');
+    signupContent.style.display = 'initial';
+    signupTab.classList.add('active');
+    signinContent.style.display = 'none';
+    signinTab.classList.remove('active');
+    document.title = 'Sign Up';
+};
+
+window.onload = () => {
+    const signinContent = document.getElementById('signin');
+    const signinTab = document.getElementById('signin-tab');
+    signinContent.style.display = 'initial';
+    signinTab.classList.add('active');
 };

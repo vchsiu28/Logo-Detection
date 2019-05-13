@@ -4,31 +4,82 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-        <link rel="stylesheet" href="css/auth.css">
+        <link rel="stylesheet" href="css/style.css" />
+        <link rel="stylesheet" href="css/auth.css" />
         <title>Sign In</title>
     </head>
     <body>
-        <div class="tab">
-            <button>Sign In</button>
-            <button>Sign Up</button>
-        </div>
-        <div id="signin">
-            <p class="error"></p>
-            <input type="text" name="email" placeholder="Email" />
-            <input type="password" name="password" placeholder="Password" />
-            <button onclick="signin()">Sign In</button>
-        </div>
-        <div id="signup">
-            <p class="error"></p>
-            <input type="text" name="email" placeholder="Email" />
-            <input type="password" name="password" placeholder="Password" />
-            <input
-                type="password"
-                name="confirmPassword"
-                placeholder="Confirm Password"
-            />
-            <button onclick="signup()">Sign Up</button>
-        </div>
+        <nav id="header" class="bar top black large" style="z-index:4">
+            <span class="bar-item left">Logo Detection</span>
+        </nav>
+        <main class="wrapper">
+            <div class="form-title">
+                <span>Welcome</span>
+            </div>
+            <div class="tabs">
+                <button
+                    id="signin-tab"
+                    class="tab-item"
+                    onclick="displaySignin()"
+                >
+                    Sign In
+                </button>
+                <button
+                    id="signup-tab"
+                    class="tab-item"
+                    onclick="displaySignup()"
+                >
+                    Sign Up
+                </button>
+            </div>
+            <div id="signin" class="hidden">
+                <div class="form-error">
+                    <span class="error"></span>
+                </div>
+                <div class="form-item">
+                    <input type="text" name="email" placeholder="Email" />
+                </div>
+                <div class="form-item">
+                    <input
+                        type="password"
+                        name="password"
+                        placeholder="Password"
+                    />
+                </div>
+                <div class="button-panel">
+                    <button class="auth-button" onclick="signin()">
+                        Sign In
+                    </button>
+                </div>
+            </div>
+            <div id="signup" class="hidden">
+                <div class="form-error">
+                    <span class="error"></span>
+                </div>
+                <div class="form-item">
+                    <input type="text" name="email" placeholder="Email" />
+                </div>
+                <div class="form-item">
+                    <input
+                        type="password"
+                        name="password"
+                        placeholder="Password"
+                    />
+                </div>
+                <div class="form-item">
+                    <input
+                        type="password"
+                        name="confirmPassword"
+                        placeholder="Confirm Password"
+                    />
+                </div>
+                <div class="button-panel">
+                    <button class="auth-button" onclick="signup()">
+                        Sign Up
+                    </button>
+                </div>
+            </div>
+        </main>
         <script src="js/auth.js"></script>
     </body>
 </html>
