@@ -19,23 +19,6 @@ const dayCounts = Object.create(null);
 var labelD;
 var dayD;
 
-class HttpError extends Error {
-    constructor(statusCode, ...args) {
-        super(...args);
-        this.statusCode = statusCode;
-    }
-}
-
-const responseHandlerFactory = successCode => {
-    return response => {
-        const statusCode = response.status;
-        if (statusCode === successCode) {
-            return response.json();
-        }
-        throw new HttpError(statusCode, response.message);
-    };
-};
-
 const verifyToken = () => {
     return fetch(verifyTokenUrl, { headers: headers }).then(
         responseHandlerFactory(200)

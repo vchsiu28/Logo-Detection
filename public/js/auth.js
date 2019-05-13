@@ -12,52 +12,30 @@ const getInputs = wrapperId => {
     return inputs;
 };
 
-const displayError = (wrapperId, err) => {
-    const selector = `#${wrapperId} span.error`;
+const displayError = err => {
+    const selector = 'main > .form-error span.error';
     const errorNode = document.querySelector(selector);
     errorNode.textContent = `* ${err.message}`;
 };
 
 const postSignup = inputs => {
-    let statusCode;
     return fetch(postSignupUrl, {
         method: 'POST',
         body: JSON.stringify(inputs),
         headers: {
             'Content-Type': 'application/json'
         }
-    })
-        .then(response => {
-            statusCode = response.status;
-            return response.json();
-        })
-        .then(response => {
-            if (statusCode !== 201) {
-                throw new Error(response.message);
-            }
-            return Promise.resolve(response);
-        });
+    }).then(responseHandlerFactory(201));
 };
 
 const postSignin = inputs => {
-    let statusCode;
     return fetch(postSigninUrl, {
         method: 'POST',
         body: JSON.stringify(inputs),
         headers: {
             'Content-Type': 'application/json'
         }
-    })
-        .then(response => {
-            statusCode = response.status;
-            return response.json();
-        })
-        .then(response => {
-            if (statusCode !== 200) {
-                throw new Error(response.message);
-            }
-            return Promise.resolve(response);
-        });
+    }).then(responseHandlerFactory(201));
 };
 
 const signup = () => {
@@ -67,7 +45,7 @@ const signup = () => {
             console.log(user);
         })
         .catch(err => {
-            displayError('signup', err);
+            displayError(err);
         });
 };
 
@@ -78,7 +56,8 @@ const signin = () => {
             window.location = `demo.html?token=${token.token}`;
         })
         .catch(err => {
-            displayError('signin', err);
+            console.log(err);
+            displayError(err);
         });
 };
 
@@ -87,11 +66,13 @@ const displaySignin = () => {
     const signinTab = document.getElementById('signin-tab');
     const signupContent = document.getElementById('signup');
     const signupTab = document.getElementById('signup-tab');
+    const errorNode = document.querySelector('main > .form-error span.error');
+    document.title = 'Sign In';
     signinContent.style.display = 'initial';
     signinTab.classList.add('active');
     signupContent.style.display = 'none';
     signupTab.classList.remove('active');
-    document.title = 'Sign In';
+    errorNode.textContent = '';
 };
 
 const displaySignup = () => {
@@ -99,11 +80,13 @@ const displaySignup = () => {
     const signinTab = document.getElementById('signin-tab');
     const signupContent = document.getElementById('signup');
     const signupTab = document.getElementById('signup-tab');
+    const errorNode = document.querySelector('main > .form-error span.error');
+    document.title = 'Sign Up';
     signupContent.style.display = 'initial';
     signupTab.classList.add('active');
     signinContent.style.display = 'none';
     signinTab.classList.remove('active');
-    document.title = 'Sign Up';
+    errorNode.textContent = '';
 };
 
 window.onload = () => {

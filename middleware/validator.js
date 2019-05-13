@@ -40,7 +40,10 @@ exports.validateSignup = (req, res, next) => {
         return res.status(400).json({ message: 'Invalid email' });
     }
     if (!passwordRegx.test(password)) {
-        return res.status(400).json({ message: 'Password too simple' });
+        return res.status(400).json({
+            message:
+                'A password must contain at least two of the following: numbers, lowercase letters, or uppercase letters.'
+        });
     }
     if (password !== confirmPassword) {
         return res.status(400).json({ message: 'Passwords do not match' });
