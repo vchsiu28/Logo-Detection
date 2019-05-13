@@ -5,6 +5,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta http-equiv="X-UA-Compatible" content="ie=edge" />
         <title>Logo Detection</title>
+        <script src="https://d3js.org/d3.v4.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
         <link rel="stylesheet" href="style.css" />
         <link
             rel="stylesheet"
@@ -18,53 +20,30 @@
             html, body, h1, h2, h3, h4, h5 {
                 font-family: 'Raleway', sans-serif;
             }
+            .chartbar { fill: slategray ; }
         </style>
     </head>
 
 
     <body class="light-grey">
-        <!-- Top container --> 
-        <div class="bar top black large" style="z-index:4">
-          <button class="bar-item button hide-large hover-none hover-text-light-grey" onclick="w3_open();"><i class="fa fa-bars"></i>  Menu</button>
-          <span class="bar-item right">Logo Detection</span>
+            <!-- Top container --> 
+        <div id="header" class="bar top black large" style="z-index:4">
+            <span class="bar-item left" onclick="toggleMenu()">More Options</span>
+            <span class="bar-item right">Logo Detection</span>
+        </div>
+
+        <!-- Menu with property buttons -->
+        <div id="menu" class="sidenav" style="display: none;">
+            <button class="menuButton" id="object-button">Objects</button> <br>
+            <button class="menuButton" id="logo-button">Logo</button> <br>
+            <button class="menuButton" id="web-button">Web </button><br>
+            <hr><br>
+            <button class="menuButton" id="user-button" onclick="toggleUser()"> My Page </button>
         </div>
 
 
-        <!-- Sidebar/menu-->
-        <nav class="sidebar collapse white animate-left" style="z-index:3;width:300px;" id="mySidebar"><br>
-          <div class="container row">
-            <div class="col s4">
-              <img src="user.png" class="circle margin-right" style="width:46px">
-            </div>
-            <div class="col s8 bar">
-              <span>Welcome<strong></strong></span><br>
-              <a href="#" class="bar-item button"><i class="fa fa-sign-in"></i></a>
-              <a href="#" class="bar-item button"><i class="fa fa-sign-out"></i></a>
-            </div>
-          </div>
-          <hr>
-          
-          <div class="container">
-            <h5>Dashboard</h5>
-          </div>
-          
-          <div class="bar-block">
-            <a href="#" class="bar-item button padding-16 hide-large dark-grey hover-black" onclick="w3_close()" title="close menu"><i class="fa fa-remove fa-fw"></i>  Close Menu</a>
-            <a href="#" class="bar-item button padding blue"><i class="fa fa-image fa-fw"></i>  Overview</a>
-            <a href="#History" class="bar-item button padding"><i class="fa fa-history fa-fw"></i>  History</a>
-          </div>
-        </nav>
-
-
-
-        <!-- Overlay effect when opening sidebar on small screens -->
-        <div class="overlay hide-large animate-opacity" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
-
-       
-
-
         <!-- !PAGE  -->
-        <div id="main" class="main" style="margin-left:300px;margin-top:43px;">
+        <div id="main" class="main" style="margin-left:10px;margin-top:43px;">
             <!-- Header -->
             <header class="container" style="padding-top:22px">
                 <h5>
@@ -79,30 +58,18 @@
             </div>
 
             <div class="row-padding margin-bottom">
-       
                 <!-- Image and results-->
                 <div class="panel">
                     <div
                         class="row-padding"
-                        style="margin:0 300px;margin-top:20px"
+                        style="margin:0 450px;margin-top:20px"
                     >
-                    
                         <div align="center" style="width: 400px; height: 400px;" >
-                            <div id="menu">
-
-                            <button class="bar-item button" id="object-button">Object</button> 
-                            <button class="bar-item button" id=logo-button">Logo</button> 
-                            <button class="bar-item button" id="web-button">Web </button>
-                            </div>
-
-                            <div style="margin-top:43px;"">
-                            
                             <img
                                 id="output"
                                 src="upload/default-image.png"
                                 style="width: inherit; height: inherit"
                             />
-                            </div>
                         </div>
 
                         <input
@@ -112,8 +79,6 @@
                             size="20"
                             onchange="openFile(event)"
                         />
-    
-                
 
                         <button id="upload-button" style="margin-top:20px">
                             Upload
@@ -129,17 +94,19 @@
                     </div>
                 </div>
             </div>
-
-             <div id="History">
-            <a href="History">
-                <p>This is where history goes</p>
-                <ul id="user-history"></ul>
-
-            </a>
-            </div>
         </div>
 
-       
+        <div id="userPage" style="display:none;margin-left:40px;margin-top:80px;">
+
+            <!-- for plots -->
+        </div>
+
+
+
+
+
+
+        
         
         <script src="js/main.js"></script>
         <script type="text/javascript" src="js/button.js"></script>
@@ -151,37 +118,31 @@
                 x.style.display = "block";
                 document.getElementById("header").style.marginLeft = "250px";
                 document.getElementById("main").style.marginLeft = "250px";
+                document.getElementById("userPage").style.marginLeft = "250px";
               } else {
                 x.style.display = "none";
                 document.getElementById("header").style.marginLeft = "0px";
                 document.getElementById("main").style.marginLeft = "0px";
+                document.getElementById("userPage").style.marginLeft = "0px";
               }
             }
-        </script>
 
-        <script>
-        // Get the Sidebar
-        var mySidebar = document.getElementById("mySidebar");
+            function toggleUser() {
+                var x = document.getElementById("main");
+                if (x.style.display === "none") {
+                    x.style.display = "block";
+                } else {
+                    x.style.display = "none";
+                }
 
-        // Get the DIV with overlay effect
-        var overlayBg = document.getElementById("myOverlay");
+                var x = document.getElementById("userPage");
+                if (x.style.display === "none") {
+                    x.style.display = "block";
+                } else {
+                    x.style.display = "none";
+                }
 
-        // Toggle between showing and hiding the sidebar, and add overlay effect
-        function w3_open() {
-          if (mySidebar.style.display === 'block') {
-            mySidebar.style.display = 'none';
-            overlayBg.style.display = "none";
-          } else {
-            mySidebar.style.display = 'block';
-            overlayBg.style.display = "block";
-          }
-        }
-
-        // Close the sidebar with the close button
-        function w3_close() {
-          mySidebar.style.display = "none";
-          overlayBg.style.display = "none";
-        }
+            }
         </script>
     </body>
 
