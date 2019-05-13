@@ -2,3 +2,5 @@ secret.json
 config.json
 .vscode
 node_modules
+.Rhistory
+.DS_Store
