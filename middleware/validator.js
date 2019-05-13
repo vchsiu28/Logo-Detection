@@ -1,12 +1,15 @@
 const jwt = require('jsonwebtoken');
 const promisify = require('util').promisify;
 
+const User = require('../models/user');
+const HttpError = require('../error').HttpError;
+
 exports.verifyToken = (req, res, next) => {
-    const token = req.headers['x-access-token'] || req.headers['authorization'];
+    let token = req.headers['x-access-token'] || req.headers['authorization'];
     if (token.startsWith('Bearer ')) {
-        token = token.slice(7, token.length);
+        token = token.slice(7);
     } else {
-        res.status(403).json({
+        return res.status(403).json({
             message: 'Authentication fails: invalid token'
         });
     }
@@ -24,7 +27,7 @@ exports.verifyToken = (req, res, next) => {
 };
 
 exports.validateSignup = (req, res, next) => {
-    const {
+    let {
         email: email,
         password: password,
         confirmPassword: confirmPassword
@@ -34,13 +37,27 @@ exports.validateSignup = (req, res, next) => {
     const emailRegx = new RegExp(req.app.locals.config.emailRegx);
     const passwordRegx = new RegExp(req.app.locals.config.passwordRegx);
     if (!emailRegx.test(email)) {
-        res.status(400).json({ message: 'Invalid email' });
+        return res.status(400).json({ message: 'Invalid email' });
     }
     if (!passwordRegx.test(password)) {
-        res.status(400).json({message: 'Password too simple'});
+        return res.status(400).json({ message: 'Password too simple' });
     }
     if (password !== confirmPassword) {
-        res.status(400).json({message: 'Passwords do not match'});
+        return res.status(400).json({ message: 'Passwords do not match' });
     }
-    next();
+    User.findOne({ email: email })
+        .then(user => {
+            if (user) {
+                throw new HttpError(400, 'email already registered');
+            }
+            next();
+        })
+        .catch(err => {
+            if (err instanceof HttpError) {
+                return res
+                    .status(err.statusCode)
+                    .json({ message: err.message });
+            }
+            res.status(500).json({ message: err.message });
+        });
 };

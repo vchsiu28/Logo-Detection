@@ -7,3 +7,7 @@ const validator = require('../middleware/validator');
 router.post('/signup', validator.validateSignup, authController.postSignup);
 
 router.post('/signin', authController.postSignin);
+
+router.get('/index', validator.verifyToken, authController.getIndex);
+
+module.exports = router;

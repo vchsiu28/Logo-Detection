@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <link rel="stylesheet" href="css/auth.css">
+        <title>Sign In</title>
+    </head>
+    <body>
+        <div class="tab">
+            <button>Sign In</button>
+            <button>Sign Up</button>
+        </div>
+        <div id="signin">
+            <p class="error"></p>
+            <input type="text" name="email" placeholder="Email" />
+            <input type="password" name="password" placeholder="Password" />
+            <button onclick="signin()">Sign In</button>
+        </div>
+        <div id="signup">
+            <p class="error"></p>
+            <input type="text" name="email" placeholder="Email" />
+            <input type="password" name="password" placeholder="Password" />
+            <input
+                type="password"
+                name="confirmPassword"
+                placeholder="Confirm Password"
+            />
+            <button onclick="signup()">Sign Up</button>
+        </div>
+        <script src="js/auth.js"></script>
+    </body>
+</html>

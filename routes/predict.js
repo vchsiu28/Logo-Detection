@@ -1,7 +1,9 @@
 const express = require('express');
-const router = express.Router();
 const predictController = require('../controllers/predict');
+const validator = require('../middleware/validator');
 
-router.post('/image', predictController.postImagePred);
+const router = express.Router();
+
+router.post('/image', validator.verifyToken, predictController.postImagePred);
 
 module.exports = router;

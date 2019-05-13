@@ -1617,22 +1617,39 @@ a {
     overflow-x: hidden; /* Disable horizontal scroll */
     padding-top: 60px; /* Place content 60px from the top */
     transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
-  }
-  
-  .menuButton{
-      background-color: #111;
-      border: none;
-      color: white;
-      padding: 15px 32px;
-      text-align: center;
-      font-size: 16px;
-  }
+}
 
-hr{
+.menuButton {
+    background-color: #111;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+hr {
     border: 0;
     height: 0;
     margin: 0 auto;
     width: 90%;
     border-top: 1px solid rgba(0, 0, 0, 0.1);
     border-bottom: 1px solid rgba(255, 255, 255);
+}
+.hidden {
+    display: none;
+}
+.simple-center {
+    margin: auto;
+    width: 50%;
+}
+.none-button {
+    background: none;
+    color: inherit;
+    border: none;
+    padding: 0;
+    font: inherit;
+    cursor: pointer;
+    outline: inherit;
 }

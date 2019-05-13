@@ -38,6 +38,7 @@ mongoose
     .connect(config.dbUrl, { useNewUrlParser: true })
     .then(() => {
         app.listen(8888);
+        console.log('Server starts listening on port 8888...');
     })
     .catch(err => {
         console.log(err);

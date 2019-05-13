@@ -7,7 +7,8 @@
         <title>Logo Detection</title>
         <script src="https://d3js.org/d3.v4.min.js"></script>
         <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-        <link rel="stylesheet" href="style.css" />
+        <script src="js/init.js"></script>
+        <link rel="stylesheet" href="css/style.css" />
         <link
             rel="stylesheet"
             href="https://fonts.googleapis.com/css?family=Raleway"
@@ -17,30 +18,60 @@
             href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
         />
         <style>
-            html, body, h1, h2, h3, h4, h5 {
+            html,
+            body,
+            h1,
+            h2,
+            h3,
+            h4,
+            h5 {
                 font-family: 'Raleway', sans-serif;
             }
-            .chartbar { fill: slategray ; }
+            .chartbar {
+                fill: slategray;
+            }
         </style>
     </head>
 
-
-    <body class="light-grey">
-            <!-- Top container --> 
+    <body class="light-grey hidden">
+        <!-- Top container -->
         <div id="header" class="bar top black large" style="z-index:4">
-            <span class="bar-item left" onclick="toggleMenu()">More Options</span>
+            <span class="bar-item left"
+                ><button class="none-button" onclick="toggleMenu()">
+                    More Options
+                </button></span
+            >
+            <span class="bar-item right"
+                ><button class="none-button" onclick="signout()">
+                    Sign Out
+                </button></span
+            >
             <span class="bar-item right">Logo Detection</span>
         </div>
 
         <!-- Menu with property buttons -->
         <div id="menu" class="sidenav" style="display: none;">
-            <button class="menuButton" id="object-button">Objects</button> <br>
-            <button class="menuButton" id="logo-button">Logo</button> <br>
-            <button class="menuButton" id="web-button">Web </button><br>
-            <hr><br>
-            <button class="menuButton" id="user-button" onclick="toggleUser()"> My Page </button>
+            <button
+                class="menuButton"
+                id="object-button"
+                onclick="displayObject()"
+            >
+                Objects
+            </button>
+            <br />
+            <button class="menuButton" id="logo-button" onclick="displayLogo()">
+                Logo
+            </button>
+            <br />
+            <button class="menuButton" id="web-button" onclick="displayWeb()">
+                Web</button
+            ><br />
+            <hr />
+            <br />
+            <button class="menuButton" id="user-button" onclick="toggleUser()">
+                My Page
+            </button>
         </div>
-
 
         <!-- !PAGE  -->
         <div id="main" class="main" style="margin-left:10px;margin-top:43px;">
@@ -62,9 +93,13 @@
                 <div class="panel">
                     <div
                         class="row-padding"
-                        style="margin:0 450px;margin-top:20px"
+                        align="center"
+                        style="margin-top:20px"
                     >
-                        <div align="center" style="width: 400px; height: 400px;" >
+                        <div
+                            align="center"
+                            style="width: 400px; height: 400px;"
+                        >
                             <img
                                 id="output"
                                 src="upload/default-image.png"
@@ -80,7 +115,11 @@
                             onchange="openFile(event)"
                         />
 
-                        <button id="upload-button" style="margin-top:20px">
+                        <button
+                            id="upload-button"
+                            style="margin-top:20px"
+                            onclick="upload()"
+                        >
                             Upload
                         </button>
 
@@ -96,56 +135,54 @@
             </div>
         </div>
 
-        <div id="userPage" style="display:none;margin-left:40px;margin-top:80px;">
-
+        <div
+            id="userPage"
+            style="display:none;margin-left:40px;margin-top:80px;"
+        >
             <!-- for plots -->
         </div>
 
-
-
-
-
-
-        
-        
         <script src="js/main.js"></script>
         <script type="text/javascript" src="js/button.js"></script>
         <script type="text/javascript" src="js/display.js"></script>
         <script type="text/javascript">
             function toggleMenu() {
-              var x = document.getElementById("menu");
-              if (x.style.display === "none") {
-                x.style.display = "block";
-                document.getElementById("header").style.marginLeft = "250px";
-                document.getElementById("main").style.marginLeft = "250px";
-                document.getElementById("userPage").style.marginLeft = "250px";
-              } else {
-                x.style.display = "none";
-                document.getElementById("header").style.marginLeft = "0px";
-                document.getElementById("main").style.marginLeft = "0px";
-                document.getElementById("userPage").style.marginLeft = "0px";
-              }
+                var x = document.getElementById('menu');
+                if (x.style.display === 'none') {
+                    x.style.display = 'block';
+                    document.getElementById('header').style.marginLeft =
+                        '250px';
+                    document.getElementById('main').style.marginLeft = '250px';
+                    document.getElementById('userPage').style.marginLeft =
+                        '250px';
+                } else {
+                    x.style.display = 'none';
+                    document.getElementById('header').style.marginLeft = '0px';
+                    document.getElementById('main').style.marginLeft = '0px';
+                    document.getElementById('userPage').style.marginLeft =
+                        '0px';
+                }
             }
 
             function toggleUser() {
-                var x = document.getElementById("main");
-                if (x.style.display === "none") {
-                    x.style.display = "block";
-                    document.getElementById("user-button").innerText= "My Page";
+                var x = document.getElementById('main');
+                if (x.style.display === 'none') {
+                    x.style.display = 'block';
+                    document.getElementById('user-button').innerText =
+                        'My Page';
                 } else {
-                    x.style.display = "none";
+                    x.style.display = 'none';
                 }
 
-                var x = document.getElementById("userPage");
-                if (x.style.display === "none") {
-                    x.style.display = "block";
-                    document.getElementById("user-button").innerText= "Main Page";
+                var x = document.getElementById('userPage');
+                if (x.style.display === 'none') {
+                    x.style.display = 'block';
+                    document.getElementById('user-button').innerText =
+                        'Main Page';
                 } else {
-                    x.style.display = "none";
+                    x.style.display = 'none';
                 }
-
             }
         </script>
     </body>
-
 </html>

@@ -3,20 +3,22 @@ const jwt = require('jsonwebtoken');
 const promisify = require('util').promisify;
 
 const User = require('../models/user');
+const HttpError = require('../error').HttpError;
 
 exports.postSignup = (req, res, next) => {
     const { email: email, password: password } = req.body;
+    let user;
     bcrypt
         .hash(password, 12)
         .then(hashedPassword => {
-            const user = new User({
+            user = new User({
                 email: email,
                 password: hashedPassword
             });
             return user.save();
         })
-        .then(() => {
-            res.status(201).json(user);
+        .then(user => {
+            res.status(201).json({ userId: user._id, email: user.email });
         })
         .catch(err => {
             res.status(500).json({ message: err.message });
@@ -29,34 +31,39 @@ exports.postSignin = (req, res, next) => {
     User.findOne({ email: email })
         .then(user => {
             if (!user) {
-                res.status(400).json({
-                    message: 'Incorrect email or password'
-                });
+                throw new HttpError(400, 'Incorrect email or password');
             }
             userId = user._id;
-            console.log(userId);
             return bcrypt.compare(password, user.password);
         })
         .then(match => {
             if (match) {
-                console.log(userId);
                 const secret = req.app.locals.config.secret;
                 return promisify(jwt.sign)(
-                    { id: userId, email: email },
+                    { userId: userId, email: email },
                     secret,
                     {
                         expiresIn: '24h'
                     }
                 );
             }
-            res.status(400).json({
-                message: 'Incorrect email or password'
-            });
+            throw new HttpError(400, 'Incorrect email or password');
         })
         .then(token => {
-            res.status(200).json({ token: token });
+            if (token) {
+                res.status(200).json({ token: token });
+            }
         })
         .catch(err => {
+            if (err instanceof HttpError) {
+                return res
+                    .status(err.statusCode)
+                    .json({ message: err.message });
+            }
             res.status(500).json({ message: err.message });
         });
 };
+
+exports.getIndex = (req, res, next) => {
+    res.status(200).json({message: 'Authentication succeeds'})
+}

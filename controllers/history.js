@@ -1,7 +1,7 @@
 const History = require('../models/history');
 
 exports.getUserHist = (req, res, next) => {
-    const userId = req.params.userId;
+    const userId = req.payload.userId;
     History.find({ userId: userId }, ['searchResult', 'time'], {
         sort: { time: -1 }
     })
@@ -15,7 +15,8 @@ exports.getUserHist = (req, res, next) => {
 };
 
 exports.postUserHist = (req, res, next) => {
-    const { userId: userId, searchResult: searchResult, time: time } = req.body;
+    const userId = req.payload.userId;
+    const { searchResult: searchResult, time: time } = req.body;
     const history = new History({
         userId: userId,
         searchResult: searchResult,

@@ -1,8 +1,11 @@
 const express = require('express');
-const router = express.Router();
 const historyController = require('../controllers/history');
+const validator = require('../middleware/validator');
 
-router.get('/user/:userId', historyController.getUserHist);
-router.post('/user/', historyController.postUserHist);
+const router = express.Router();
+
+router.get('/user', validator.verifyToken, historyController.getUserHist);
+
+router.post('/user', validator.verifyToken, historyController.postUserHist);
 
 module.exports = router;
