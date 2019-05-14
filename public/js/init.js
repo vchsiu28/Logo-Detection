@@ -14,8 +14,8 @@ var width = 960 - margin.left - margin.right;
 var height = 500 - margin.top - margin.bottom;
 var userLabel = [];
 var userDay = [];
-const labelCounts = Object.create(null);
-const dayCounts = Object.create(null);
+var labelCounts = Object.create(null);
+var dayCounts = Object.create(null);
 var labelD;
 var dayD;
 

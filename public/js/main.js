@@ -1,3 +1,5 @@
+var days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"]
+
 const loadResponse = () => {
     document.getElementById('result').innerHTML = 'Fetching results...';
     if (imageResponse.logo.length == 0) {
@@ -43,15 +45,12 @@ const addUserHist = history => {
 const addPlot = data => {
     if (data.length > 0) {
         console.log(d3.max(d3.values(data)).value);
+        console.log(data);
     }
     if (data.length === 0) {
-        d3.select('#userPage')
-            .append('h5')
-            .text('You have not searched anything.');
+        d3.select('#plotM').text('You have not searched anything.')
     } else {
-        d3.select('#userPage')
-            .append('h5')
-            .text('It seems you like to search for ...');
+        d3.select('#plotM').text('It seems you like to search for ...')
         data.sort(function(a, b) {
             return d3.descending(a.value, b.value);
         });
@@ -104,6 +103,7 @@ const addPlot = data => {
 const loadUserHist = () => {
     userLabel = [];
     userDay = [];
+    labelCounts = Object.create(null);
     getUserHist()
         .then(histories => {
             histories.forEach(history => {
@@ -115,13 +115,13 @@ const loadUserHist = () => {
                 labelCounts[btn] = labelCounts[btn] ? labelCounts[btn] + 1 : 1;
             });
             userDay.forEach(btn => {
-                dayCounts[btn] = dayCounts[btn] ? dayCounts[btn] + 1 : 1;
+                dayCounts[days[btn]] = dayCounts[btn] ? dayCounts[btn] + 1 : 1;
             });
 
             labelD = d3.entries(labelCounts);
             dayD = d3.entries(dayCounts);
             addPlot(labelD);
-            // console.log(labelD);
+            console.log(dayD);
             // console.log(dayD);
         })
         .catch(err => {

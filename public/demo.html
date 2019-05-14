@@ -141,6 +141,7 @@
             style="display:none;margin-left:40px;margin-top:80px;"
         >
             <!-- for plots -->
+            <h5 id="plotM" style="margin-left:10px">Message</h5>
         </div>
 
         <script src="js/main.js"></script>
@@ -178,6 +179,8 @@
                 var x = document.getElementById('userPage');
                 if (x.style.display === 'none') {
                     x.style.display = 'block';
+                    $("svg").remove();
+                    loadUserHist();
                     document.getElementById('user-button').innerText =
                         'Main Page';
                 } else {
