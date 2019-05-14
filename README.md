@@ -12,32 +12,32 @@ You find a nice handbag and wonder what its brand is. This web app is here for y
 5. Make sure [run.sh](../blob/master/run.sh) is executable by `chmod +x run.sh` and then use `./run.sh` to start the web app.
 6. The web page is statically hosted on <http://localhost:8888/demo.html> by default.
 
-![default](https://github.com/vchsiu28/Logo-Detection/blob/master/img/default2.png)
+This is the page you see. Sign up with your email and click on the activation link you received. Then sign in to use our product. 
+![login](https://github.com/vchsiu28/Logo-Detection/blob/master/img/login.png)
+
 Click "Choose File" and choose the image file from your browser. Click "Upload", wait for 2-3 seconds and results will be updated underneath the image. 
+![login](https://github.com/vchsiu28/Logo-Detection/blob/master/img/default.png)
 
-![object](https://github.com/vchsiu28/Logo-Detection/blob/master/img/logo2.png)
 The default result is the logo of the image. 
+![logo](https://github.com/vchsiu28/Logo-Detection/blob/master/img/logo.png)
 
-![logo](https://github.com/vchsiu28/Logo-Detection/blob/master/img/more_options.png)
-If you want to learn more about the image, click on "More Options" button.
+If you want to learn more about the image, click on "More Options" button on the top left corner .
+![logo](https://github.com/vchsiu28/Logo-Detection/blob/master/img/options.png)
 
-![logo](https://github.com/vchsiu28/Logo-Detection/blob/master/img/object2.png)
 Click on "Objects" button to see what object it is.
+![object](https://github.com/vchsiu28/Logo-Detection/blob/master/img/object.png)
 
-![web](https://github.com/vchsiu28/Logo-Detection/blob/master/img/web2.png)
 "Web" button searches for the website of closest image to the uploaded image. 
+![web](https://github.com/vchsiu28/Logo-Detection/blob/master/img/web.png)
 
 Links are potential e-commerce sites where you can find/purchase the item.   
 Fetch response are stored in our user history database for user analytics. 
 
-## Progress
-* Completed backend API for fetching image prediction result from google vision API and rendering the correct format to the front-end.
-* Added an example use of the above API in the front-end.
-* Completed front-end layout design.
-* Added backend API for fetching and saving search records (all to the same dummy user though, will continue with this part later).
-* Added dashboard graph for history searches.
-* Added jwt-based user authentication flow and email activation.
+Click on "My Page" to see your search history.
+You can see which categories you searched by frequency. 
+![history](https://github.com/vchsiu28/Logo-Detection/blob/master/img/history.png)
 
+Click on "Main Page", navigate to the main page and continue your seach.
 
 
 
