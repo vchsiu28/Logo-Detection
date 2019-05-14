@@ -5,7 +5,7 @@ var headers = {
 };
 var imageResponse = { label: [''], logo: [''], web: [''] };
 var postImageUrl = 'http://localhost:8888/predict/image';
-var getHistUrl = 'http://localhost:8888/history/user/';
+var getHistUrl = 'http://localhost:8888/history/user';
 var postHistUrl = 'http://localhost:8888/history/user';
 var verifyTokenUrl = 'http://localhost:8888/auth/index';
 
@@ -30,7 +30,8 @@ const displayBody = () => {
 };
 
 verifyToken()
-    .then(() => {
+    .then(response => {
+        console.log(response);
         displayBody();
     })
     .catch(err => {
