@@ -7,10 +7,10 @@ var openFile = function(event) {
       var output = document.getElementById('output');
       output.src = dataURL;
       if(output.height >= output.width){
-        output.style ="float:right;width:100%;height=450";
+        output.style ="float:right;width:100%;height=400";
 
       } else {
-        output.style ="float:right;height:100%;width=450";
+        output.style ="float:right;height:100%;width=400";
 
       }
 

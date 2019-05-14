@@ -77,7 +77,7 @@ exports.postSignin = (req, res, next) => {
 };
 
 exports.getIndex = (req, res, next) => {
-    res.status(200).json({ message: 'Authentication succeeds' });
+    res.status(200).json(req.payload);
 };
 
 exports.patchActivate = (req, res, next) => {

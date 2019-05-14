@@ -176,7 +176,6 @@ json response in the following format:
 }
 */
 const getImageResponse = imageByte => {
-    let statusCode;
     return fetch(postImageUrl, {
         method: 'POST',
         body: JSON.stringify({ image: imageByte }),
