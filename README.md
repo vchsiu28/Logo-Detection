@@ -33,10 +33,11 @@ Click on "Objects" button to see what object it is.
 Links are potential e-commerce sites where you can find/purchase the item.   
 Fetch response are stored in our user history database for user analytics. 
 
-Click on "My page" to see your search history.
-![history](https://github.com/vchsiu28/Logo-Detection/blob/master/img/history.png)
+Click on "My Page" to see your search history.
 You can see which categories you searched by frequency. 
+![history](https://github.com/vchsiu28/Logo-Detection/blob/master/img/history.png)
 
+Click on "Main Page", navigate to the main page and continue your seach.
 
 
 
