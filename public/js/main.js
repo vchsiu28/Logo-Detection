@@ -1,4 +1,12 @@
-var days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"]
+var days = [
+    'Sunday',
+    'Monday',
+    'Tuesday',
+    'Wednesday',
+    'Thursday',
+    'Friday',
+    'Saturday'
+];
 
 const loadResponse = () => {
     document.getElementById('result').innerHTML = 'Fetching results...';
@@ -48,9 +56,9 @@ const addPlot = data => {
         console.log(data);
     }
     if (data.length === 0) {
-        d3.select('#plotM').text('You have not searched anything.')
+        d3.select('#plotM').text('You have not searched anything.');
     } else {
-        d3.select('#plotM').text('It seems you like to search for ...')
+        d3.select('#plotM').text('It seems you like to search for ...');
         data.sort(function(a, b) {
             return d3.descending(a.value, b.value);
         });
@@ -100,10 +108,76 @@ const addPlot = data => {
     }
 };
 
+const addPlotDay = data => {
+    var svg = d3
+        .select('#userPage')
+        .append('svg')
+        .attr('width', width + margin.left + margin.right)
+        .attr('height', height + margin.top + margin.bottom)
+        .append('g')
+        .attr('transform', 'translate(' + margin.left + ',' + margin.top + ')');
+
+    var y = d3.scaleLinear().range([height, 0]);
+    y.domain([0, 10]);
+
+    var x = d3.scalePoint().range([0, width]).padding(0.5);
+    x.domain(
+        data.map(function(d) {
+            return d.key;
+        })
+    );
+
+    svg.append('g')
+        .attr('transform', 'translate(0,' + height + ')')
+        .call(d3.axisBottom(x));
+
+    svg.append('g').call(d3.axisLeft(y));
+    // Add the line
+    svg.append('path')
+        .datum(data)
+        .attr('fill', 'none')
+        .attr('stroke', '#69b3a2')
+        .attr('stroke-width', 1.5)
+        .attr(
+            'd',
+            d3
+                .line()
+                .x(function(d) {
+                    return x(d.key);
+                })
+                .y(function(d) {
+                    return y(d.value);
+                })
+        );
+    // Add the points
+    svg.append('g')
+        .selectAll('dot')
+        .data(data)
+        .enter()
+        .append('circle')
+        .attr('cx', function(d) {
+            return x(d.key);
+        })
+        .attr('cy', function(d) {
+            return y(d.value);
+        })
+        .attr('r', 5)
+        .attr('fill', '#69b3a2');
+};
+
 const loadUserHist = () => {
     userLabel = [];
     userDay = [];
     labelCounts = Object.create(null);
+    dayCounts = {
+        Sunday: 0,
+        Monday: 0,
+        Tuesday: 0,
+        Wednesday: 0,
+        Thursday: 0,
+        Friday: 0,
+        Saturday: 0
+    };
     getUserHist()
         .then(histories => {
             histories.forEach(history => {
@@ -115,13 +189,16 @@ const loadUserHist = () => {
                 labelCounts[btn] = labelCounts[btn] ? labelCounts[btn] + 1 : 1;
             });
             userDay.forEach(btn => {
-                dayCounts[days[btn]] = dayCounts[btn] ? dayCounts[btn] + 1 : 1;
+                dayCounts[days[btn]] = dayCounts[days[btn]]
+                    ? dayCounts[days[btn]] + 1
+                    : 1;
             });
 
             labelD = d3.entries(labelCounts);
             dayD = d3.entries(dayCounts);
             addPlot(labelD);
             console.log(dayD);
+            addPlotDay(dayD);
             // console.log(dayD);
         })
         .catch(err => {
