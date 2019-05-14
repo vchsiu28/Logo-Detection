@@ -24,8 +24,8 @@ The default result is the logo of the image.
 If you want to learn more about the image, click on "More Options" button on the top left corner .
 ![logo](https://github.com/vchsiu28/Logo-Detection/blob/master/img/options.png)
 
-![object](https://github.com/vchsiu28/Logo-Detection/blob/master/img/object.png)
 Click on "Objects" button to see what object it is.
+![object](https://github.com/vchsiu28/Logo-Detection/blob/master/img/object.png)
 
 "Web" button searches for the website of closest image to the uploaded image. 
 ![web](https://github.com/vchsiu28/Logo-Detection/blob/master/img/web.png)
