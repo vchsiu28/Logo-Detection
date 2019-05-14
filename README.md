@@ -12,6 +12,8 @@ You find a nice handbag and wonder what its brand is. This web app is here for y
 5. Make sure [run.sh](../blob/master/run.sh) is executable by `chmod +x run.sh` and then use `./run.sh` to start the web app.
 6. The web page is statically hosted on <http://localhost:8888/demo.html> by default.
 
+## Screenshots
+
 This is the page you see. Sign up with your email and click on the activation link you received. Then sign in to use our product. 
 ![login](https://github.com/vchsiu28/Logo-Detection/blob/master/img/login.png)
 
