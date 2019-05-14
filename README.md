@@ -35,6 +35,8 @@ Fetch response are stored in our user history database for user analytics.
 * Added an example use of the above API in the front-end.
 * Completed front-end layout design.
 * Added backend API for fetching and saving search records (all to the same dummy user though, will continue with this part later).
+* Added dashboard graph for history searches.
+* Added jwt-based user authentication flow and email activation.
 
 
 
