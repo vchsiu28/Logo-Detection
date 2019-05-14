@@ -41,8 +41,9 @@ const postSignin = inputs => {
 const signup = () => {
     const inputs = getInputs('signup');
     postSignup(inputs)
-        .then(user => {
-            console.log(user);
+        .then(() => {
+            displaySignin();
+            displayActivateSent();
         })
         .catch(err => {
             displayError(err);
@@ -56,9 +57,20 @@ const signin = () => {
             window.location = `demo.html?token=${token.token}`;
         })
         .catch(err => {
-            console.log(err);
-            displayError(err);
+            if (err instanceof HttpError && err.statusCode === 403) {
+                displayActivateSent();
+            } else {
+                hideActivateInfo();
+                displayError(err);
+            }
         });
+};
+
+const hideActivateInfo = () => {
+    const activateInfoNode = document.querySelector(
+        'main > .activate-info span.info'
+    );
+    activateInfoNode.style.display = 'none';
 };
 
 const displaySignin = () => {
@@ -67,6 +79,7 @@ const displaySignin = () => {
     const signupContent = document.getElementById('signup');
     const signupTab = document.getElementById('signup-tab');
     const errorNode = document.querySelector('main > .form-error span.error');
+    hideActivateInfo();
     document.title = 'Sign In';
     signinContent.style.display = 'initial';
     signinTab.classList.add('active');
@@ -81,6 +94,7 @@ const displaySignup = () => {
     const signupContent = document.getElementById('signup');
     const signupTab = document.getElementById('signup-tab');
     const errorNode = document.querySelector('main > .form-error span.error');
+    hideActivateInfo();
     document.title = 'Sign Up';
     signupContent.style.display = 'initial';
     signupTab.classList.add('active');
@@ -89,9 +103,44 @@ const displaySignup = () => {
     errorNode.textContent = '';
 };
 
+displayActivateSuccess = () => {
+    const activateInfoNode = document.querySelector(
+        'main > .activate-info span.info'
+    );
+    activateInfoNode.style.display = 'initial';
+    activateInfoNode.textContent =
+        'You have successfully activated your account. Please sign in to continue.';
+};
+
+displayActivateFail = () => {
+    const activateInfoNode = document.querySelector(
+        'main > .activate-info span.info'
+    );
+    activateInfoNode.style.display = 'initial';
+    activateInfoNode.textContent =
+        'You activation fails due to invalid or expired link. Please sign in again to receive an updated link.';
+};
+
+displayActivateSent = () => {
+    const activateInfoNode = document.querySelector(
+        'main > .activate-info span.info'
+    );
+    activateInfoNode.style.display = 'initial';
+    activateInfoNode.textContent =
+        'We have emailed you an activation link. Please check your email. Note that the link will expire after 1h.';
+};
+
 window.onload = () => {
+    const activateStatus = new URL(window.location.href).searchParams.get(
+        'activate'
+    );
     const signinContent = document.getElementById('signin');
     const signinTab = document.getElementById('signin-tab');
     signinContent.style.display = 'initial';
     signinTab.classList.add('active');
+    if (activateStatus === 'success') {
+        displayActivateSuccess();
+    } else if (activateStatus === 'fail') {
+        displayActivateFail();
+    }
 };

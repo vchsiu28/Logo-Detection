@@ -35,7 +35,7 @@ app.use('/predict', predictRoutes);
 app.use('/auth', authRoutes);
 
 mongoose
-    .connect(config.dbUrl, { useNewUrlParser: true })
+    .connect(config.dbUrl, { useNewUrlParser: true, useFindAndModify: false })
     .then(() => {
         app.listen(8888);
         console.log('Server starts listening on port 8888...');

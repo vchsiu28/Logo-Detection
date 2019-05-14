@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>Activate</title>
+    </head>
+    <body>
+        <script src="js/util.js"></script>
+        <script>
+            const token = new URL(window.location.href).searchParams.get(
+                'token'
+            );
+            const activateUrl = 'http://localhost:8888/auth/activate';
+            fetch(activateUrl, {
+                method: 'PATCH',
+                body: JSON.stringify({ token: token }),
+                headers: {
+                    'Content-Type': 'application/json'
+                }
+            })
+                .then(responseHandlerFactory(200))
+                .then(() => {
+                    window.location = 'auth.html?activate=success';
+                })
+                .catch(err => {
+                    console.log(err);
+                    window.location = 'auth.html?activate=fail';
+                });
+        </script>
+    </body>
+</html>

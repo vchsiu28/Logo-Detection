@@ -10,7 +10,13 @@ const userSchema = new Schema({
     password: {
         type: String,
         required: true
-    }
+    },
+    verified: {
+        type: Boolean,
+        required: true
+    },
+    activateToken: String,
+    activateExpire: Date
 })
 
 module.exports = mongoose.model('User', userSchema);

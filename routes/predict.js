@@ -4,6 +4,6 @@ const validator = require('../middleware/validator');
 
 const router = express.Router();
 
-router.post('/image', validator.verifyToken, predictController.postImagePred);
+router.post('/image', validator.verifyAuthToken, predictController.postImagePred);
 
 module.exports = router;

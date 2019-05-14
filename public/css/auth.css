@@ -43,14 +43,18 @@
     padding: 1em, 0;
     margin-bottom: 1.5rem;
 }
-
+.activate-info {
+    font-size: 1.2rem;
+    margin: 0;
+    padding: 0;
+}
 .form-error {
     color: red;
     font-size: 1.2rem;
     margin: 0;
     padding: 0;
 }
-.form-error span {
+.activate-info span .form-error span {
     display: block;
     margin-top: 0.2rem;
     margin-bottom: 0.2rem;

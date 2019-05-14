@@ -4,8 +4,8 @@ const validator = require('../middleware/validator');
 
 const router = express.Router();
 
-router.get('/user', validator.verifyToken, historyController.getUserHist);
+router.get('/user', validator.verifyAuthToken, historyController.getUserHist);
 
-router.post('/user', validator.verifyToken, historyController.postUserHist);
+router.post('/user', validator.verifyAuthToken, historyController.postUserHist);
 
 module.exports = router;

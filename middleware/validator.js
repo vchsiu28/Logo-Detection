@@ -4,7 +4,7 @@ const promisify = require('util').promisify;
 const User = require('../models/user');
 const HttpError = require('../error').HttpError;
 
-exports.verifyToken = (req, res, next) => {
+exports.verifyAuthToken = (req, res, next) => {
     let token = req.headers['x-access-token'] || req.headers['authorization'];
     if (token.startsWith('Bearer ')) {
         token = token.slice(7);
